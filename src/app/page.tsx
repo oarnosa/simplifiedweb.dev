@@ -10,7 +10,7 @@ const Home = () => {
       {/* Hero */}
       <section className="h-[65vh] text-white bg-theme-primary">
         <div className="container flex flex-col items-center justify-center h-full text-center">
-          <h1 className="text-6xl font-semibold">Simplified</h1>
+          <h1 className="font-sans text-6xl font-semibold">Simplified</h1>
           <div className="flex items-center justify-center mt-2 space-x-4 text-6xl font-semibold">
             <span className="text-7xl text-theme-secondary">{'{ '}</span>
             <TypedAnimation

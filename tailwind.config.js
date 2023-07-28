@@ -16,6 +16,10 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        serif: ['var(--font-montserrat)'],
+        sans: ['var(--font-sans-beam)'],
+      },
       colors: {
         // theme colors
         'theme-primary': 'hsla(var(--theme-primary))',
