@@ -1,21 +1,31 @@
 import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 
+import TypedAnimation from '@/components/TypedAnimation';
 import { Button } from '@/components/ui/button';
 
 const Home = () => {
   return (
-    <main className="bg-theme-primary">
+    <main>
       {/* Hero */}
       <section className="h-[65vh] text-white bg-theme-primary">
         <div className="container flex flex-col items-center justify-center h-full text-center">
           <h1 className="text-6xl font-semibold">Simplified</h1>
-          <h1 className="mt-2 text-6xl font-semibold ">
+          <div className="flex items-center justify-center mt-2 space-x-4 text-6xl font-semibold">
             <span className="text-7xl text-theme-secondary">{'{ '}</span>
-            Web Development
+            <TypedAnimation
+              strings={[
+                'Web Development',
+                'Web Design',
+                'Website Hosting',
+                'Website Maintenance',
+                'SEO Services',
+                'Content Creation',
+              ]}
+            />
             <span className="text-7xl text-theme-secondary">{' }'}</span>
-          </h1>
-          <p className="max-w-xl my-10 text-neutral-300">
+          </div>
+          <p className="max-w-xl my-10 text-gray-200">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
             distinctio quos repudiandae, adipisci magnam dolores molestiae
             dolorum rem fuga a.
@@ -40,30 +50,42 @@ const Home = () => {
       {/* End Hero */}
 
       {/* About */}
-      <section></section>
+      <section className="">
+        <div className="container">
+          <h2>Who We Are</h2>
+        </div>
+      </section>
       {/* End About */}
 
       {/* Services */}
-      <section>
-        <h2>What We Do</h2>
+      <section className="">
+        <div className="container">
+          <h2>What We Do</h2>
+        </div>
       </section>
       {/* End Services */}
 
       {/* Pricing */}
-      <section>
-        <h2>Pricing</h2>
+      <section className="">
+        <div className="container">
+          <h2>Pricing</h2>
+        </div>
       </section>
       {/* End Pricing */}
 
       {/* Portfolio */}
-      <section>
-        <h2>Our Work</h2>
+      <section className="">
+        <div className="container">
+          <h2>Our Work</h2>
+        </div>
       </section>
       {/* End Portfolio */}
 
       {/* Contact */}
-      <section>
-        <h2>Start Your Project</h2>
+      <section className="">
+        <div className="container">
+          <h2>Start Your Project</h2>
+        </div>
       </section>
       {/* End Contact */}
     </main>
