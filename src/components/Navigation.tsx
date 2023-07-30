@@ -9,7 +9,13 @@ const Navigation = () => {
   return (
     <div className="h-24 text-white bg-theme-primary">
       <div className="container flex items-center justify-between h-full gap-16">
-        <Image src={LogoDark} alt="Simplified Web.Dev Logo" className="w-40" />
+        <Link href="#">
+          <Image
+            src={LogoDark}
+            alt="Simplified Web.Dev Logo"
+            className="w-40"
+          />
+        </Link>
         <div className="flex gap-12 font-semibold">
           <Link href="#" className="transition duration-300 group">
             About

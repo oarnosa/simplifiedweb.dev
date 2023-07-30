@@ -43,7 +43,7 @@ const sansBeam = SansBeam({
 });
 
 export const metadata: Metadata = {
-  title: 'Small Business Web Design + Development | Simplified Web.Dev',
+  title: 'Small Business Web Development | Simplified Web.Dev',
   description: 'Web Development Simplified',
 };
 
