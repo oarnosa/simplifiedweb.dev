@@ -1,6 +1,5 @@
 import {
   AreaChart,
-  Check,
   CheckCircle,
   ChevronRight,
   Code2,
@@ -14,6 +13,7 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 
+import Carousel from '@/components/Carousel';
 import TypedAnimation from '@/components/TypedAnimation';
 import { Button } from '@/components/ui/button';
 
@@ -250,7 +250,7 @@ const Home = () => {
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="mr-2 text-theme-secondary" />
-                  Web Hosting and Domain Services
+                  UI/UX Design
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="mr-2 text-theme-secondary" />
@@ -258,15 +258,15 @@ const Home = () => {
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="mr-2 text-theme-secondary" />
-                  Search Engine Optimization (SEO)
-                </li>
-                <li className="flex items-center">
-                  <CheckCircle className="mr-2 text-theme-secondary" />
                   Performance Optimization
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="mr-2 text-theme-secondary" />
-                  UI/UX Design
+                  Web Hosting and Domain Services
+                </li>
+                <li className="flex items-center">
+                  <CheckCircle className="mr-2 text-theme-secondary" />
+                  Search Engine Optimization (SEO)
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="mr-2 text-theme-secondary" />
@@ -274,7 +274,7 @@ const Home = () => {
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="mr-2 text-theme-secondary" />
-                  Media and Branding
+                  Content Management Systems
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="mr-2 text-theme-secondary" />
@@ -296,7 +296,7 @@ const Home = () => {
       {/* End Services */}
 
       {/* Pricing */}
-      <section className="pb-32">
+      <section className="pb-16">
         <div className="container">
           <div className="grid grid-cols-3 gap-6">
             {/* Blogging */}
@@ -438,6 +438,7 @@ const Home = () => {
             <div className="w-8 h-0.5 mr-2 bg-theme-secondary"></div>
             <span className="font-semibold">Our Recent Work</span>
           </div>
+          <Carousel />
         </div>
       </section>
       {/* End Portfolio */}
