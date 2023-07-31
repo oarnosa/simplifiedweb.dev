@@ -5,8 +5,11 @@ import {
   Code2,
   GitPullRequest,
   HelpingHand,
+  Mail,
+  MapPin,
   MonitorSmartphone,
   PencilLine,
+  Phone,
   PiggyBank,
   Rocket,
   Smartphone,
@@ -14,6 +17,7 @@ import {
 import Link from 'next/link';
 
 import Carousel from '@/components/Carousel';
+import ContactForm from '@/components/ContactForm';
 import TypedAnimation from '@/components/TypedAnimation';
 import { Button } from '@/components/ui/button';
 
@@ -432,7 +436,7 @@ const Home = () => {
       {/* End Pricing */}
 
       {/* Portfolio */}
-      <section className="py-32">
+      <section className="pt-32 pb-96">
         <div className="container">
           <div className="flex items-center">
             <div className="w-8 h-0.5 mr-2 bg-theme-secondary"></div>
@@ -444,12 +448,36 @@ const Home = () => {
       {/* End Portfolio */}
 
       {/* Contact */}
-      <section className="py-32 bg-gray-50">
-        <div className="container">
-          <div className="flex items-center">
-            <div className="w-8 h-0.5 mr-2 bg-theme-secondary"></div>
-            <span className="font-semibold">Contact Us</span>
+      <section className="pt-32 pb-64 bg-gray-50">
+        <div className="container grid grid-cols-12 gap-24">
+          {/* Info */}
+          <div className="col-span-4">
+            <div className="flex items-center">
+              <div className="w-8 h-0.5 mr-2 bg-theme-secondary"></div>
+              <span className="font-semibold">Contact Us</span>
+            </div>
+            <h2 className="mt-8 mb-16 font-sans text-4xl font-semibold capitalize">
+              Let&apos;s Get Your Project Started
+            </h2>
+            <div className="space-y-4">
+              <p className="flex text-xl">
+                <Phone size={32} className="mr-4" /> (786) 620 1200
+              </p>
+              <p className="flex text-xl">
+                <Mail size={32} className="mr-4" /> info@simplifiedweb.dev
+              </p>
+              <p className="flex text-xl">
+                <MapPin size={32} className="mr-4" /> Miami, FL
+              </p>
+            </div>
           </div>
+          {/* End Info */}
+
+          {/* Form */}
+          <div className="col-span-8 p-16 -mt-64 -mb-32 text-white rounded-md bg-theme-primary">
+            <ContactForm />
+          </div>
+          {/* End Form */}
         </div>
       </section>
       {/* End Contact */}

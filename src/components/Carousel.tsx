@@ -13,10 +13,10 @@ const Carousel = () => {
   return (
     <div>
       <div className="flex items-center justify-center w-full">
-        <div className="grid items-center justify-center grid-cols-2 grid-rows-2 gap-8 pt-12 pb-16">
+        <div className="grid items-center justify-center grid-cols-2 grid-rows-2 gap-8 pt-8 pb-16">
           {/* Title */}
-          <div className="flex flex-col max-w-xl space-y-4">
-            <h2 className="font-sans text-3xl font-semibold">
+          <div className="flex flex-col max-w-xl space-y-6">
+            <h2 className="font-sans text-4xl font-semibold">
               Phoenix Wellness <span className="font-serif">&</span> Recovery
             </h2>
             <p>
@@ -76,9 +76,9 @@ const Carousel = () => {
       {/* Count */}
       <div className="flex items-center justify-center space-x-4">
         <ChevronLeft size={36} strokeWidth={3} className="cursor-pointer" />
-        <div className="w-8 h-[6px] cursor-pointer bg-theme-secondary"></div>
-        <div className="w-8 h-[6px] bg-black cursor-pointer"></div>
-        <div className="w-8 h-[6px] bg-black cursor-pointer"></div>
+        <div className="w-8 h-1.5 cursor-pointer bg-theme-secondary"></div>
+        <div className="w-8 h-1.5 bg-black cursor-pointer"></div>
+        <div className="w-8 h-1.5 bg-black cursor-pointer"></div>
         <ChevronRight size={36} strokeWidth={3} className="cursor-pointer" />
       </div>
       {/* End Count */}

@@ -2,8 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import LogoDark from '@/assets/swd-logo-dark.png';
-
-import { Button } from './ui/button';
+import { Button } from '@/components/ui/button';
 
 const Navigation = () => {
   return (
