@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import LogoDark from '@/assets/swd-logo-dark.png';
-import { Button } from '@/components/ui/button';
+import { buttonVariants } from '@/components/ui/button';
 
 const Navigation = () => {
   return (
@@ -16,26 +16,31 @@ const Navigation = () => {
           />
         </Link>
         <div className="flex gap-12 font-semibold">
-          <Link href="#" className="transition duration-300 group">
+          <Link href="#about" className="transition duration-300 group">
             About
             <span className="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-theme-secondary"></span>
           </Link>
-          <Link href="#" className="transition duration-300 group">
+          <Link href="#services" className="transition duration-300 group">
             Services
             <span className="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-theme-secondary"></span>
           </Link>
-          <Link href="#" className="transition duration-300 group">
-            Pricing
+          <Link href="#portfolio" className="transition duration-300 group">
+            Portfolio
             <span className="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-theme-secondary"></span>
           </Link>
-          <Link href="#" className="transition duration-300 group">
+          <Link href="#contact" className="transition duration-300 group">
             Contact
             <span className="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-theme-secondary"></span>
           </Link>
         </div>
-        <Button className="font-semibold text-white bg-theme-secondary hover:bg-theme-secondary/90 active:bg-theme-secondary/80">
+        <Link
+          href="#contact"
+          className={`${buttonVariants({
+            variant: 'default',
+          })} font-semibold text-white bg-theme-secondary hover:bg-theme-secondary/90 active:bg-theme-secondary/80`}
+        >
           Start Your Project
-        </Button>
+        </Link>
       </div>
     </div>
   );

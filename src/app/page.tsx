@@ -19,7 +19,7 @@ import Link from 'next/link';
 import Carousel from '@/components/Carousel';
 import ContactForm from '@/components/ContactForm';
 import TypedAnimation from '@/components/TypedAnimation';
-import { Button } from '@/components/ui/button';
+import { buttonVariants } from '@/components/ui/button';
 
 const Home = () => {
   return (
@@ -48,11 +48,16 @@ const Home = () => {
             dolorum rem fuga a.
           </p>
           <div className="flex items-center justify-center gap-8">
-            <Button className="font-semibold text-white bg-theme-secondary hover:bg-theme-secondary/90 active:bg-theme-secondary/80">
-              Start Your Project
-            </Button>
             <Link
-              href="#"
+              href="#contact"
+              className={`${buttonVariants({
+                variant: 'default',
+              })} font-semibold text-white bg-theme-secondary hover:bg-theme-secondary/90 active:bg-theme-secondary/80`}
+            >
+              Start Your Project
+            </Link>
+            <Link
+              href="#contact"
               className="flex items-center group hover:text-white/90"
             >
               Contact Us
@@ -67,7 +72,7 @@ const Home = () => {
       {/* End Hero */}
 
       {/* About */}
-      <section className="py-32">
+      <section id="about" className="py-36">
         <div className="container flex flex-col">
           {/* What We Do */}
           <div className="grid grid-cols-12 gap-8">
@@ -140,7 +145,7 @@ const Home = () => {
       {/* End About */}
 
       {/* Model */}
-      <section className="bg-gray-50">
+      <section id="model" className="bg-gray-50">
         <div className="container py-32">
           {/* Intro */}
           <h2 className="pb-8 font-sans text-4xl font-semibold text-center capitalize">
@@ -215,7 +220,10 @@ const Home = () => {
       {/* End Model */}
 
       {/* Services */}
-      <section className="pt-32 text-white pb-96 bg-theme-primary">
+      <section
+        id="services"
+        className="text-white pt-36 pb-72 bg-theme-primary"
+      >
         <div className="container flex flex-col">
           <div className="grid grid-cols-12 gap-24">
             <div className="flex flex-col justify-around col-span-5">
@@ -300,7 +308,7 @@ const Home = () => {
       {/* End Services */}
 
       {/* Pricing */}
-      <section className="pb-16">
+      <section id="pricing">
         <div className="container">
           <div className="grid grid-cols-3 gap-6">
             {/* Blogging */}
@@ -419,7 +427,7 @@ const Home = () => {
                 <p>We can build it.</p>
               </div>
               <Link
-                href="#"
+                href="#contact"
                 className="flex items-center font-semibold group hover:text-black/90"
               >
                 Contact Us
@@ -436,7 +444,7 @@ const Home = () => {
       {/* End Pricing */}
 
       {/* Portfolio */}
-      <section className="pt-32 pb-96">
+      <section id="portfolio" className="pt-36 pb-72">
         <div className="container">
           <div className="flex items-center">
             <div className="w-8 h-0.5 mr-2 bg-theme-secondary"></div>
@@ -448,7 +456,7 @@ const Home = () => {
       {/* End Portfolio */}
 
       {/* Contact */}
-      <section className="pt-32 pb-64 bg-gray-50">
+      <section id="contact" className="pt-36 pb-72 bg-gray-50">
         <div className="container grid grid-cols-12 gap-24">
           {/* Info */}
           <div className="col-span-4">
@@ -459,16 +467,47 @@ const Home = () => {
             <h2 className="mt-8 mb-16 font-sans text-4xl font-semibold capitalize">
               Let&apos;s Get Your Project Started
             </h2>
-            <div className="space-y-4">
-              <p className="flex text-xl">
-                <Phone size={32} className="mr-4" /> (786) 620 1200
-              </p>
-              <p className="flex text-xl">
-                <Mail size={32} className="mr-4" /> info@simplifiedweb.dev
-              </p>
-              <p className="flex text-xl">
-                <MapPin size={32} className="mr-4" /> Miami, FL
-              </p>
+            <div className="space-y-4 text-lg">
+              {/* Phone */}
+              <div className="flex">
+                <Phone size={32} className="mr-4" />
+                <Link
+                  href="tel:7866988065"
+                  className="transition duration-300 group"
+                >
+                  <span>(786) 698 8065</span>
+                  <span className="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-theme-secondary"></span>
+                </Link>
+              </div>
+              {/* End Phone */}
+
+              {/* Email */}
+              <div className="flex">
+                <Mail size={32} className="mr-4" />
+                <Link
+                  href="mailto:info@simplifiedweb.dev"
+                  className="transition duration-300 group"
+                >
+                  <span>info@simplifiedweb.dev</span>
+                  <span className="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-theme-secondary"></span>
+                </Link>
+              </div>
+              {/* End Email */}
+
+              {/* Location */}
+              <div className="flex">
+                <MapPin size={32} className="mr-4" />
+                <Link
+                  href="https://goo.gl/maps/LDjEwqe8e3G9j5gWA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition duration-300 group"
+                >
+                  <span>Miami, FL</span>
+                  <span className="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-theme-secondary"></span>
+                </Link>
+              </div>
+              {/* End Location */}
             </div>
           </div>
           {/* End Info */}

@@ -11,9 +11,9 @@ import PhxTop from '@/assets/portfolio/phxrecover-top.png';
 
 const Carousel = () => {
   return (
-    <div>
+    <div className="my-16">
       <div className="flex items-center justify-center w-full">
-        <div className="grid items-center justify-center grid-cols-2 grid-rows-2 gap-8 pt-8 pb-16">
+        <div className="grid items-center justify-center grid-cols-2 grid-rows-2 gap-8 pb-16">
           {/* Title */}
           <div className="flex flex-col max-w-xl space-y-6">
             <h2 className="font-sans text-4xl font-semibold">
@@ -25,8 +25,10 @@ const Carousel = () => {
               odio.
             </p>
             <Link
-              href="#"
-              className="flex items-center font-semibold group hover:text-black/90"
+              href="https://phxrecover.com/"
+              className="flex items-center font-semibold group hover:text-black/90 w-fit"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Visit Website
               <ChevronRight
