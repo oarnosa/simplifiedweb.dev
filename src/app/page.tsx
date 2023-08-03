@@ -82,9 +82,7 @@ const Home = () => {
                 <span className="font-semibold">What We Do</span>
               </div>
               <h2 className="font-sans text-4xl font-semibold capitalize">
-                Simplifying Web Design <br />
-                <span className="font-serif">&</span> Development For Small
-                Businesses
+                Simplifying Web Design <br />& Development For Small Businesses
               </h2>
             </div>
             <div className="col-span-7">
@@ -166,7 +164,7 @@ const Home = () => {
             <div className="flex flex-col items-center h-full px-16 py-8 space-y-4 text-center bg-white border-t-8 rounded-md border-t-theme-secondary">
               <Code2 size={64} className="text-theme-secondary" />
               <p className="font-sans font-semibold capitalize">
-                Web Design <span className="font-serif">&</span> Development
+                Web Design & Development
               </p>
               <p>Includes over 40 hours of design, development, and testing.</p>
             </div>
@@ -428,7 +426,7 @@ const Home = () => {
               </div>
               <Link
                 href="#contact"
-                className="flex items-center font-semibold group hover:text-black/90"
+                className="flex items-center font-semibold group hover:text-black/80"
               >
                 Contact Us
                 <ChevronRight
