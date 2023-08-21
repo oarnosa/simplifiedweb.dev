@@ -55,14 +55,14 @@ const ContactForm = () => {
         <Image
           src={LogoDark}
           alt="Simplified Web.Dev Logo"
-          className="w-40 mb-12"
+          className="w-32 lg:w-40 lg:mb-12"
         />
-        <div className="flex w-full space-x-4">
+        <div className="w-full space-y-6 md:space-y-0 md:space-x-4 md:flex">
           <FormField
             control={form.control}
             name="firstname"
             render={({ field }) => (
-              <FormItem className="w-1/2">
+              <FormItem className="w-full md:w-1/2">
                 <FormLabel>First Name</FormLabel>
                 <FormControl>
                   <Input {...field} className="text-black" />
@@ -75,7 +75,7 @@ const ContactForm = () => {
             control={form.control}
             name="lastname"
             render={({ field }) => (
-              <FormItem className="w-1/2">
+              <FormItem className="w-full md:w-1/2">
                 <FormLabel>Last Name</FormLabel>
                 <FormControl>
                   <Input {...field} className="text-black" />
@@ -85,12 +85,12 @@ const ContactForm = () => {
             )}
           />
         </div>
-        <div className="flex w-full space-x-4">
+        <div className="w-full space-y-6 md:space-y-0 md:space-x-4 md:flex">
           <FormField
             control={form.control}
             name="email"
             render={({ field }) => (
-              <FormItem className="w-2/3">
+              <FormItem className="w-full md:w-2/3">
                 <FormLabel>Email</FormLabel>
                 <FormControl>
                   <Input {...field} className="text-black" />
@@ -103,7 +103,7 @@ const ContactForm = () => {
             control={form.control}
             name="phone"
             render={({ field }) => (
-              <FormItem className="w-1/3">
+              <FormItem className="w-full md:w-1/3">
                 <FormLabel>Phone</FormLabel>
                 <FormControl>
                   <Input {...field} className="text-black" />

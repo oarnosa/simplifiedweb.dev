@@ -24,18 +24,18 @@ const Carousel = () => {
   };
 
   return (
-    <div className="my-16">
+    <div className="mt-4 mb-8 lg:my-12">
       {/* Carousel Content */}
       {projects
         .filter((_, index) => index === current)
         .map((project) => (
           <div
             key={project.id}
-            className="grid items-center justify-center grid-cols-2 grid-rows-2 gap-8 pb-16"
+            className="items-center justify-center mb-8 lg:mb-12 lg:grid lg:grid-cols-2 lg:grid-rows-2 lg:gap-8"
           >
             {/* Title */}
-            <div className="flex flex-col max-w-xl space-y-6">
-              <h2 className="font-sans text-4xl font-semibold">
+            <div className="flex flex-col max-w-xl mb-12 space-y-4 lg:mb-0">
+              <h2 className="font-sans text-2xl font-semibold md:text-3xl lg:text-4xl">
                 {project.title}
               </h2>
               <p>{project.description}</p>
@@ -55,7 +55,7 @@ const Carousel = () => {
             {/* End Title */}
 
             {/* Thumbnail Landing */}
-            <div className="flex h-full px-16 py-12 bg-gray-100 border-2 rounded-md max-h-96 min-h-[384px]">
+            <div className="flex h-full p-0 max-h-96 md:hidden lg:bg-gray-100 lg:border-2 lg:rounded-md lg:min-h-[384px] lg:flex lg:px-16 lg:py-12">
               <img
                 src={project.images.landing}
                 alt={project.title}
@@ -65,7 +65,7 @@ const Carousel = () => {
             {/* Thumbnail Landing */}
 
             {/* Thumbnail Top / Content Scroll */}
-            <div className="relative flex h-full overflow-hidden bg-gray-100 border-2 rounded-md max-h-96 min-h-[384px]">
+            <div className="relative h-full overflow-hidden bg-gray-100 border-2 rounded-md max-h-96 min-h-[384px] hidden md:flex">
               <img
                 src={project.images.top}
                 alt={project.title}
@@ -80,7 +80,7 @@ const Carousel = () => {
             {/* End Thumbnail Top / Content Scroll */}
 
             {/* Thumbnail Section */}
-            <div className="flex h-full px-16 pb-12 bg-gray-100 border-2 rounded-md max-h-96 min-h-[384px]">
+            <div className="h-full px-16 pb-12 bg-gray-100 border-2 rounded-md max-h-96 min-h-[384px] hidden lg:flex">
               <img
                 src={project.images.section}
                 alt={project.title}
@@ -95,7 +95,7 @@ const Carousel = () => {
       {/* Carousel Nav */}
       <div className="flex items-center justify-center space-x-4">
         <ChevronLeft
-          size={36}
+          size={32}
           strokeWidth={3}
           className={`cursor-pointer ${
             current === 0 ? 'text-gray-200' : 'text-black'
@@ -105,7 +105,7 @@ const Carousel = () => {
         {projects.map((project) => (
           <div
             key={project.id}
-            className={`w-8 h-1.5 cursor-pointer ${
+            className={`w-6 h-1.5 cursor-pointer ${
               current === projects.indexOf(project)
                 ? 'bg-theme-secondary'
                 : 'bg-black'
@@ -116,7 +116,7 @@ const Carousel = () => {
           ></div>
         ))}
         <ChevronRight
-          size={36}
+          size={32}
           strokeWidth={3}
           className={`cursor-pointer ${
             current === projects.length - 1 ? 'text-gray-200' : 'text-black'
