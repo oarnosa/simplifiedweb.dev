@@ -31,7 +31,7 @@ const Carousel = () => {
         .map((project) => (
           <div
             key={project.id}
-            className="items-center justify-center mb-8 lg:mb-12 lg:grid lg:grid-cols-2 lg:grid-rows-2 lg:gap-8"
+            className="items-center justify-center mb-8 lg:mb-12 lg:grid lg:grid-cols-2 lg:grid-rows-2 lg:gap-8 "
           >
             {/* Title */}
             <div className="flex flex-col max-w-xl mb-12 space-y-4 lg:mb-0">
@@ -93,34 +93,39 @@ const Carousel = () => {
       {/* End Carousel Content */}
 
       {/* Carousel Nav */}
-      <div className="flex items-center justify-center space-x-4">
+      <div className="flex items-center justify-center space-x-2">
         <ChevronLeft
-          size={32}
+          size={28}
           strokeWidth={3}
-          className={`cursor-pointer ${
-            current === 0 ? 'text-gray-200' : 'text-black'
-          }`}
+          className={`
+          cursor-pointer
+          ${current === 0 ? 'text-gray-200' : 'text-black'}
+          `}
           onClick={handlePrev}
         />
         {projects.map((project) => (
           <div
             key={project.id}
-            className={`w-6 h-1.5 cursor-pointer ${
+            className={`
+            w-5 h-[5px] cursor-pointer
+            ${
               current === projects.indexOf(project)
                 ? 'bg-theme-secondary'
                 : 'bg-black'
-            }`}
+            }
+            `}
             onClick={() => {
               setCurrent(projects.indexOf(project));
             }}
           ></div>
         ))}
         <ChevronRight
-          size={32}
+          size={28}
           strokeWidth={3}
-          className={`cursor-pointer ${
-            current === projects.length - 1 ? 'text-gray-200' : 'text-black'
-          }`}
+          className={`
+          cursor-pointer
+          ${current === projects.length - 1 ? 'text-gray-200' : 'text-black'}
+          `}
           onClick={handleNext}
         />
       </div>

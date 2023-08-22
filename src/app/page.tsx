@@ -27,8 +27,8 @@ const Home = () => {
       {/* Hero */}
       <section className="h-[70vh] text-white bg-theme-primary">
         <div className="container flex flex-col items-center justify-center h-full text-center">
-          {/* Heading Desktop */}
-          <div className="flex-col hidden font-sans text-5xl font-semibold lg:text-6xl md:flex">
+          {/* Intro Desktop */}
+          <div className="flex-col hidden font-sans text-5xl font-semibold md:flex lg:text-6xl">
             <h1 className="font-sans text-5xl font-semibold lg:text-6xl">
               Simplified
             </h1>
@@ -51,9 +51,9 @@ const Home = () => {
               </span>
             </div>
           </div>
-          {/* End Heading Desktop */}
+          {/* End Intro Desktop */}
 
-          {/* Heading Mobile */}
+          {/* Intro Mobile */}
           <div className="flex flex-col font-sans text-4xl font-semibold md:hidden">
             <h1 className="font-sans text-4xl font-semibold">Simplified Web</h1>
             <div className="flex items-center justify-center mt-2 space-x-2">
@@ -64,9 +64,9 @@ const Home = () => {
               <span className="text-5xl text-theme-secondary">{'}'}</span>
             </div>
           </div>
-          {/* End Heading Mobile */}
+          {/* End Intro Mobile */}
 
-          <p className="max-w-xl my-10 text-gray-200">
+          <p className="max-w-xl my-12 text-gray-200">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
             distinctio quos repudiandae, adipisci magnam dolores molestiae
             dolorum rem fuga a.
@@ -185,14 +185,14 @@ const Home = () => {
 
           {/* Cards */}
           <div className="grid gap-8 mt-16 md:grid-cols-2 lg:grid-cols-3">
-            <div className="flex flex-col items-center h-full px-16 py-8 space-y-4 text-center bg-white border-t-8 rounded-md border-t-theme-secondary">
+            <div className="flex flex-col items-center h-full px-16 py-8 space-y-4 text-center transition bg-white border-t-8 rounded-md shadow-md border-t-theme-secondary hover:translate-x-2 hover:-translate-y-2">
               <Code2 size={64} className="text-theme-secondary" />
               <p className="font-sans font-semibold capitalize">
                 Web Design & Development
               </p>
               <p>Includes over 40 hours of design, development, and testing.</p>
             </div>
-            <div className="flex flex-col items-center h-full px-16 py-8 space-y-4 text-center bg-white border-t-8 rounded-md border-t-theme-secondary">
+            <div className="flex flex-col items-center h-full px-16 py-8 space-y-4 text-center transition bg-white border-t-8 rounded-md shadow-md border-t-theme-secondary hover:translate-x-2 hover:-translate-y-2">
               <Rocket size={60} className="text-theme-secondary" />
               <p className="font-sans font-semibold capitalize">
                 Built for speed
@@ -202,7 +202,7 @@ const Home = () => {
                 boost your search ranking.
               </p>
             </div>
-            <div className="flex flex-col items-center h-full px-16 py-8 space-y-4 text-center bg-white border-t-8 rounded-md border-t-theme-secondary">
+            <div className="flex flex-col items-center h-full px-16 py-8 space-y-4 text-center transition bg-white border-t-8 rounded-md shadow-md border-t-theme-secondary hover:translate-x-2 hover:-translate-y-2">
               <AreaChart size={64} className="text-theme-secondary" />
               <p className="font-sans font-semibold capitalize">Analytics</p>
               <p>
@@ -210,14 +210,14 @@ const Home = () => {
                 where it comes from.
               </p>
             </div>
-            <div className="flex flex-col items-center h-full px-16 py-8 space-y-4 text-center bg-white border-t-8 rounded-md border-t-theme-secondary">
+            <div className="flex flex-col items-center h-full px-16 py-8 space-y-4 text-center transition bg-white border-t-8 rounded-md shadow-md border-t-theme-secondary hover:translate-x-2 hover:-translate-y-2">
               <PiggyBank size={64} className="text-theme-secondary" />
               <p className="font-sans font-semibold capitalize">
                 Hosting Fees Included
               </p>
               <p>Hosting fees are built right into the monthly payment.</p>
             </div>
-            <div className="flex flex-col items-center h-full px-16 py-8 space-y-4 text-center bg-white border-t-8 rounded-md border-t-theme-secondary">
+            <div className="flex flex-col items-center h-full px-16 py-8 space-y-4 text-center transition bg-white border-t-8 rounded-md shadow-md border-t-theme-secondary hover:translate-x-2 hover:-translate-y-2">
               <PencilLine size={60} className="text-theme-secondary" />
               <p className="font-sans font-semibold capitalize">
                 Unlimited Edits
@@ -227,7 +227,7 @@ const Home = () => {
                 day.
               </p>
             </div>
-            <div className="flex flex-col items-center h-full px-16 py-8 space-y-4 text-center bg-white border-t-8 rounded-md border-t-theme-secondary">
+            <div className="flex flex-col items-center h-full px-16 py-8 space-y-4 text-center transition bg-white border-t-8 rounded-md shadow-md border-t-theme-secondary hover:translate-x-2 hover:-translate-y-2">
               <HelpingHand size={64} className="text-theme-secondary" />
               <p className="font-sans font-semibold capitalize">24/7 Support</p>
               <p>
@@ -334,14 +334,16 @@ const Home = () => {
         <div className="container">
           <div className="flex flex-col lg:grid lg:grid-cols-3 lg:gap-6">
             {/* Blogging */}
-            <div className="flex flex-col items-center self-center w-full max-w-md px-4 pt-8 pb-12 mb-8 text-center bg-white border-2 border-t-8 rounded-md md:px-8 lg:self-start lg:px-16 lg:-mt-16 h-fit">
+            <div className="flex flex-col items-center self-center w-full max-w-md px-4 pt-8 pb-12 mb-8 text-center bg-white border-2 border-t-8 rounded-md shadow-md md:px-8 lg:self-start lg:px-16 lg:-mt-16 h-fit">
               <p className="pb-4 font-sans text-xl font-semibold">
                 Standard + Blogging
               </p>
               <p className="pb-2">Starting At</p>
               <h3 className="flex items-end pb-8 text-theme-primary">
-                <span className="font-sans text-4xl font-semibold lg:text-5xl">$300</span> /
-                month
+                <span className="font-sans text-4xl font-semibold lg:text-5xl">
+                  $300
+                </span>{' '}
+                / month
               </h3>
               <ul className="w-full space-y-4">
                 <li className="flex justify-start">
@@ -364,12 +366,14 @@ const Home = () => {
             {/* End Blogging */}
 
             {/* Standard */}
-            <div className="flex flex-col items-center self-center order-first w-full max-w-md px-4 pt-8 pb-12 mb-8 -mt-24 text-center bg-white border-2 border-t-8 rounded-md md:px-8 lg:self-start lg:px-16 lg:order-none lg:-mt-36 border-theme-secondary h-fit">
+            <div className="flex flex-col items-center self-center order-first w-full max-w-md px-4 pt-8 pb-12 mb-8 -mt-24 text-center bg-white border-2 border-t-8 rounded-md shadow-md md:px-8 lg:self-start lg:px-16 lg:order-none lg:-mt-36 border-theme-secondary h-fit">
               <p className="pb-4 font-sans text-xl font-semibold">Standard</p>
               <p className="pb-2">5 Pages</p>
               <h3 className="flex items-end pb-8 text-theme-primary">
-                <span className="font-sans text-4xl font-semibold lg:text-5xl">$150</span> /
-                month
+                <span className="font-sans text-4xl font-semibold lg:text-5xl">
+                  $150
+                </span>{' '}
+                / month
               </h3>
               <ul className="w-full space-y-4">
                 <li className="flex justify-start">
@@ -416,11 +420,13 @@ const Home = () => {
             {/* End Standard */}
 
             {/* Ecommerce */}
-            <div className="flex flex-col items-center self-center w-full max-w-md px-4 pt-8 pb-12 mb-8 text-center bg-white border-2 border-t-8 rounded-md md:px-8 lg:self-start lg:px-16 lg:-mt-16 h-fit">
+            <div className="flex flex-col items-center self-center w-full max-w-md px-4 pt-8 pb-12 mb-8 text-center bg-white border-2 border-t-8 rounded-md shadow-md md:px-8 lg:self-start lg:px-16 lg:-mt-16 h-fit">
               <p className="pb-4 font-sans text-xl font-semibold">E-Commerce</p>
               <p className="pb-2">Starting At</p>
               <h3 className="flex items-end pb-8 text-theme-primary">
-                <span className="font-sans text-4xl font-semibold lg:text-5xl">$5K</span>
+                <span className="font-sans text-4xl font-semibold lg:text-5xl">
+                  $5K
+                </span>
               </h3>
               <ul className="w-full space-y-4">
                 <li className="flex justify-start">
@@ -478,10 +484,7 @@ const Home = () => {
       {/* End Portfolio */}
 
       {/* Contact */}
-      <section
-        id="contact"
-        className="py-24 lg:pt-36 lg:pb-72 bg-gray-50"
-      >
+      <section id="contact" className="py-24 lg:pt-36 lg:pb-72 bg-gray-50">
         <div className="container lg:grid lg:grid-cols-12 lg:gap-24">
           {/* Info */}
           <div className="mb-12 lg:col-span-4 lg:mb-0">

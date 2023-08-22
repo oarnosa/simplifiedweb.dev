@@ -1,7 +1,7 @@
 'use client';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
-import { Menu, X } from 'lucide-react';
+import { ChevronUp, Menu, X } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -10,9 +10,30 @@ import { buttonVariants } from '@/components/ui/button';
 
 const Navigation = () => {
   const [navOpen, setNavOpen] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  // get percentage of current scroll location
+  function handleScroll() {
+    const height =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
+
+    const windowScroll = document.documentElement.scrollTop;
+
+    const scrolled = (windowScroll / height) * 100;
+
+    setScrollPosition(scrolled);
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  });
 
   return (
-    <div className="h-24 text-white bg-theme-primary">
+    <nav className="h-[10vh] text-white bg-theme-primary" id="nav">
       {/* Desktop Nav */}
       <div className="container items-center justify-between hidden h-full gap-16 lg:flex">
         {/* Logo */}
@@ -60,7 +81,7 @@ const Navigation = () => {
       {/* End Desktop Nav */}
 
       {/* Mobile Nav */}
-      <div className="container flex items-center justify-between h-full gap-16 lg:hidden">
+      <div className="container flex items-center justify-between h-full gap-16 lg:hidden ">
         {/* Logo */}
         <Link href="#">
           <Image
@@ -72,50 +93,94 @@ const Navigation = () => {
         {/* End Logo */}
 
         {/* Hamburger Icon */}
-        <Menu size={32} onClick={() => setNavOpen(true)} />
+        <Menu
+          size={32}
+          className="transition cursor-pointer hover:opacity-90"
+          onClick={() => setNavOpen(true)}
+        />
         {/* End Hamburger Icon */}
 
-        {/* Main Menu */}
+        {/* Overlay */}
         <div
-          className={`fixed top-0 right-0 z-50 ${
-            navOpen ? 'flex' : 'hidden'
-          } flex-col w-screen h-screen md:w-3/5 p-8 font-semibold text-black bg-gray-50`}
+          className={`
+          fixed top-0 left-0 w-screen h-screen bg-black/40 transition z-40
+          ${!navOpen && 'hidden'}
+          `}
+          onClick={() => setNavOpen(false)}
+        ></div>
+        {/* End Overlay */}
+
+        <aside
+          className={`
+          fixed top-0 right-0 z-50 transition flex flex-col w-screen h-screen md:w-3/5 p-8 font-semibold text-black bg-gray-50
+          ${navOpen ? 'translate-x-0' : 'translate-x-full'}
+          `}
         >
           <X
             className="mb-2 ml-auto cursor-pointer"
             onClick={() => setNavOpen(false)}
           />
           <div className="flex flex-col space-y-6">
-            <Link href="#about" className="transition duration-300 group">
+            <Link
+              href="#about"
+              className="transition duration-300 group"
+              onClick={() => setNavOpen(false)}
+            >
               About
               <span className="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-theme-secondary"></span>
             </Link>
-            <Link href="#services" className="transition duration-300 group">
+            <Link
+              href="#services"
+              className="transition duration-300 group"
+              onClick={() => setNavOpen(false)}
+            >
               Services
               <span className="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-theme-secondary"></span>
             </Link>
-            <Link href="#portfolio" className="transition duration-300 group">
+            <Link
+              href="#portfolio"
+              className="transition duration-300 group"
+              onClick={() => setNavOpen(false)}
+            >
               Portfolio
               <span className="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-theme-secondary"></span>
             </Link>
-            <Link href="#contact" className="transition duration-300 group">
+            <Link
+              href="#contact"
+              className="transition duration-300 group"
+              onClick={() => setNavOpen(false)}
+            >
               Contact
               <span className="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-theme-secondary"></span>
             </Link>
           </div>
           <Link
             href="#contact"
-            className={`${buttonVariants({
-              variant: 'default',
-            })} font-semibold text-white bg-theme-secondary hover:bg-theme-secondary/90 active:bg-theme-secondary/80 mt-12`}
+            className={`
+            font-semibold text-white bg-theme-secondary hover:bg-theme-secondary/90 active:bg-theme-secondary/80 mt-12
+            ${buttonVariants({ variant: 'default' })}
+            `}
+            onClick={() => setNavOpen(false)}
           >
             Start Your Project
           </Link>
-        </div>
-        {/* Main Menu */}
+        </aside>
       </div>
       {/* End Mobile Nav */}
-    </div>
+
+      {/* Back To Top Button */}
+      <Link
+        href="#nav"
+        className={`
+        fixed flex z-40 items-center justify-center p-1 text-white rounded-full bottom-5 right-5 bg-theme-secondary transition
+        ${scrollPosition >= 5 ? 'opacity-90' : 'opacity-0'}
+        ${scrollPosition >= 99 && '-translate-y-16'}
+        `}
+      >
+        <ChevronUp size={24} />
+      </Link>
+      {/* End Back To Top Button */}
+    </nav>
   );
 };
 
