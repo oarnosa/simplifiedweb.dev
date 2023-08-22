@@ -185,14 +185,14 @@ const Home = () => {
 
           {/* Cards */}
           <div className="grid gap-8 mt-16 md:grid-cols-2 lg:grid-cols-3">
-            <div className="flex flex-col items-center h-full px-16 py-8 space-y-4 text-center transition bg-white border-t-8 rounded-md shadow-md border-t-theme-secondary hover:translate-x-2 hover:-translate-y-2">
+            <div className="flex flex-col items-center h-full px-12 py-6 space-y-4 text-center transition-all bg-white border-t-8 rounded-md shadow-md xl:px-16 xl:py-8 border-t-theme-secondary hover:translate-x-2 hover:-translate-y-2">
               <Code2 size={64} className="text-theme-secondary" />
               <p className="font-sans font-semibold capitalize">
                 Web Design & Development
               </p>
               <p>Includes over 40 hours of design, development, and testing.</p>
             </div>
-            <div className="flex flex-col items-center h-full px-16 py-8 space-y-4 text-center transition bg-white border-t-8 rounded-md shadow-md border-t-theme-secondary hover:translate-x-2 hover:-translate-y-2">
+            <div className="flex flex-col items-center h-full px-12 py-6 space-y-4 text-center transition-all bg-white border-t-8 rounded-md shadow-md xl:px-16 xl:py-8 border-t-theme-secondary hover:translate-x-2 hover:-translate-y-2">
               <Rocket size={60} className="text-theme-secondary" />
               <p className="font-sans font-semibold capitalize">
                 Built for speed
@@ -202,7 +202,7 @@ const Home = () => {
                 boost your search ranking.
               </p>
             </div>
-            <div className="flex flex-col items-center h-full px-16 py-8 space-y-4 text-center transition bg-white border-t-8 rounded-md shadow-md border-t-theme-secondary hover:translate-x-2 hover:-translate-y-2">
+            <div className="flex flex-col items-center h-full px-12 py-6 space-y-4 text-center transition-all bg-white border-t-8 rounded-md shadow-md xl:px-16 xl:py-8 border-t-theme-secondary hover:translate-x-2 hover:-translate-y-2">
               <AreaChart size={64} className="text-theme-secondary" />
               <p className="font-sans font-semibold capitalize">Analytics</p>
               <p>
@@ -210,14 +210,14 @@ const Home = () => {
                 where it comes from.
               </p>
             </div>
-            <div className="flex flex-col items-center h-full px-16 py-8 space-y-4 text-center transition bg-white border-t-8 rounded-md shadow-md border-t-theme-secondary hover:translate-x-2 hover:-translate-y-2">
+            <div className="flex flex-col items-center h-full px-12 py-6 space-y-4 text-center transition-all bg-white border-t-8 rounded-md shadow-md xl:px-16 xl:py-8 border-t-theme-secondary hover:translate-x-2 hover:-translate-y-2">
               <PiggyBank size={64} className="text-theme-secondary" />
               <p className="font-sans font-semibold capitalize">
                 Hosting Fees Included
               </p>
               <p>Hosting fees are built right into the monthly payment.</p>
             </div>
-            <div className="flex flex-col items-center h-full px-16 py-8 space-y-4 text-center transition bg-white border-t-8 rounded-md shadow-md border-t-theme-secondary hover:translate-x-2 hover:-translate-y-2">
+            <div className="flex flex-col items-center h-full px-12 py-6 space-y-4 text-center transition-all bg-white border-t-8 rounded-md shadow-md xl:px-16 xl:py-8 border-t-theme-secondary hover:translate-x-2 hover:-translate-y-2">
               <PencilLine size={60} className="text-theme-secondary" />
               <p className="font-sans font-semibold capitalize">
                 Unlimited Edits
@@ -227,7 +227,7 @@ const Home = () => {
                 day.
               </p>
             </div>
-            <div className="flex flex-col items-center h-full px-16 py-8 space-y-4 text-center transition bg-white border-t-8 rounded-md shadow-md border-t-theme-secondary hover:translate-x-2 hover:-translate-y-2">
+            <div className="flex flex-col items-center h-full px-12 py-6 space-y-4 text-center transition-all bg-white border-t-8 rounded-md shadow-md xl:px-16 xl:py-8 border-t-theme-secondary hover:translate-x-2 hover:-translate-y-2">
               <HelpingHand size={64} className="text-theme-secondary" />
               <p className="font-sans font-semibold capitalize">24/7 Support</p>
               <p>
@@ -247,7 +247,7 @@ const Home = () => {
         className="pt-24 pb-48 text-white lg:pt-36 lg:pb-72 bg-theme-primary"
       >
         <div className="container flex flex-col">
-          <div className="space-y-8 lg:grid lg:grid-cols-12 lg:gap-24">
+          <div className="space-y-8 xl:grid xl:grid-cols-12 xl:gap-24">
             <div className="flex flex-col justify-around space-y-4 lg:col-span-5">
               <div className="flex items-center">
                 <div className="w-8 h-0.5 mr-2 bg-theme-secondary"></div>
@@ -334,7 +334,7 @@ const Home = () => {
         <div className="container">
           <div className="flex flex-col lg:grid lg:grid-cols-3 lg:gap-6">
             {/* Blogging */}
-            <div className="flex flex-col items-center self-center w-full max-w-md px-4 pt-8 pb-12 mb-8 text-center bg-white border-2 border-t-8 rounded-md shadow-md md:px-8 lg:self-start lg:px-16 lg:-mt-16 h-fit">
+            <div className="flex flex-col items-center self-center w-full max-w-md px-4 pt-8 pb-12 mb-8 text-center transition-all bg-white border-2 border-t-8 rounded-md shadow-md hover:-translate-y-2 md:px-8 lg:self-start xl:px-16 lg:-mt-16 h-fit">
               <p className="pb-4 font-sans text-xl font-semibold">
                 Standard + Blogging
               </p>
@@ -366,7 +366,7 @@ const Home = () => {
             {/* End Blogging */}
 
             {/* Standard */}
-            <div className="flex flex-col items-center self-center order-first w-full max-w-md px-4 pt-8 pb-12 mb-8 -mt-24 text-center bg-white border-2 border-t-8 rounded-md shadow-md md:px-8 lg:self-start lg:px-16 lg:order-none lg:-mt-36 border-theme-secondary h-fit">
+            <div className="flex flex-col items-center self-center order-first w-full max-w-md px-4 pt-8 pb-12 mb-8 -mt-24 text-center transition-all bg-white border-2 border-t-8 rounded-md shadow-md hover:-translate-y-2 md:px-8 lg:self-start xl:px-16 lg:order-none lg:-mt-36 border-theme-secondary h-fit">
               <p className="pb-4 font-sans text-xl font-semibold">Standard</p>
               <p className="pb-2">5 Pages</p>
               <h3 className="flex items-end pb-8 text-theme-primary">
@@ -420,7 +420,7 @@ const Home = () => {
             {/* End Standard */}
 
             {/* Ecommerce */}
-            <div className="flex flex-col items-center self-center w-full max-w-md px-4 pt-8 pb-12 mb-8 text-center bg-white border-2 border-t-8 rounded-md shadow-md md:px-8 lg:self-start lg:px-16 lg:-mt-16 h-fit">
+            <div className="flex flex-col items-center self-center w-full max-w-md px-4 pt-8 pb-12 mb-8 text-center transition-all bg-white border-2 border-t-8 rounded-md shadow-md hover:-translate-y-2 md:px-8 lg:self-start xl:px-16 lg:-mt-16 h-fit">
               <p className="pb-4 font-sans text-xl font-semibold">E-Commerce</p>
               <p className="pb-2">Starting At</p>
               <h3 className="flex items-end pb-8 text-theme-primary">
@@ -472,7 +472,7 @@ const Home = () => {
       {/* End Pricing */}
 
       {/* Portfolio */}
-      <section id="portfolio" className="py-24 lg:pt-36 lg:pb-72">
+      <section id="portfolio" className="py-24 xl:pt-36 xl:pb-72">
         <div className="container">
           <div className="flex items-center">
             <div className="w-8 h-0.5 mr-2 bg-theme-secondary"></div>
@@ -484,10 +484,10 @@ const Home = () => {
       {/* End Portfolio */}
 
       {/* Contact */}
-      <section id="contact" className="py-24 lg:pt-36 lg:pb-72 bg-gray-50">
-        <div className="container lg:grid lg:grid-cols-12 lg:gap-24">
+      <section id="contact" className="py-24 xl:pt-36 xl:pb-72 bg-gray-50">
+        <div className="container xl:grid xl:grid-cols-12 xl:gap-24">
           {/* Info */}
-          <div className="mb-12 lg:col-span-4 lg:mb-0">
+          <div className="mb-12 xl:col-span-4 xl:mb-0">
             <div className="flex items-center">
               <div className="w-8 h-0.5 mr-2 bg-theme-secondary"></div>
               <span className="font-semibold">Contact Us</span>
@@ -501,7 +501,7 @@ const Home = () => {
                 <Phone size={30} className="mr-4" />
                 <Link
                   href="tel:7866988065"
-                  className="transition duration-300 group"
+                  className="transition-all duration-300 group"
                 >
                   <span>(786) 698 8065</span>
                   <span className="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-theme-secondary"></span>
@@ -514,7 +514,7 @@ const Home = () => {
                 <Mail size={30} className="mr-4" />
                 <Link
                   href="mailto:info@simplifiedweb.dev"
-                  className="transition duration-300 group"
+                  className="transition-all duration-300 group"
                 >
                   <span>info@simplifiedweb.dev</span>
                   <span className="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-theme-secondary"></span>
@@ -529,7 +529,7 @@ const Home = () => {
                   href="https://goo.gl/maps/LDjEwqe8e3G9j5gWA"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="transition duration-300 group"
+                  className="transition-all duration-300 group"
                 >
                   <span>Miami, FL</span>
                   <span className="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-theme-secondary"></span>
@@ -541,7 +541,7 @@ const Home = () => {
           {/* End Info */}
 
           {/* Form */}
-          <div className="p-8 text-white rounded-md md:p-16 lg:-mt-64 lg:-mb-32 lg:col-span-8 bg-theme-primary">
+          <div className="p-8 text-white rounded-md shadow-md md:p-16 xl:-mt-64 xl:-mb-32 xl:col-span-8 bg-theme-primary">
             <ContactForm />
           </div>
           {/* End Form */}

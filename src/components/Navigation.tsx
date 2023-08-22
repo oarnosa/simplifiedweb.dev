@@ -48,19 +48,19 @@ const Navigation = () => {
 
         {/* Menu */}
         <div className="flex gap-12 font-semibold">
-          <Link href="#about" className="transition duration-300 group">
+          <Link href="#about" className="transition-all duration-300 group">
             About
             <span className="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-theme-secondary"></span>
           </Link>
-          <Link href="#services" className="transition duration-300 group">
+          <Link href="#services" className="transition-all duration-300 group">
             Services
             <span className="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-theme-secondary"></span>
           </Link>
-          <Link href="#portfolio" className="transition duration-300 group">
+          <Link href="#portfolio" className="transition-all duration-300 group">
             Portfolio
             <span className="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-theme-secondary"></span>
           </Link>
-          <Link href="#contact" className="transition duration-300 group">
+          <Link href="#contact" className="transition-all duration-300 group">
             Contact
             <span className="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-theme-secondary"></span>
           </Link>
@@ -95,7 +95,7 @@ const Navigation = () => {
         {/* Hamburger Icon */}
         <Menu
           size={32}
-          className="transition cursor-pointer hover:opacity-90"
+          className="transition-all cursor-pointer hover:opacity-90"
           onClick={() => setNavOpen(true)}
         />
         {/* End Hamburger Icon */}
@@ -103,7 +103,7 @@ const Navigation = () => {
         {/* Overlay */}
         <div
           className={`
-          fixed top-0 left-0 w-screen h-screen bg-black/40 transition z-40
+          fixed top-0 left-0 w-screen h-screen bg-black/40 transition-all z-40 ease-in-out
           ${!navOpen && 'hidden'}
           `}
           onClick={() => setNavOpen(false)}
@@ -112,7 +112,7 @@ const Navigation = () => {
 
         <aside
           className={`
-          fixed top-0 right-0 z-50 transition flex flex-col w-screen h-screen md:w-3/5 p-8 font-semibold text-black bg-gray-50
+          fixed top-0 right-0 z-50 transition-all flex flex-col w-screen h-screen md:w-3/5 p-8 font-semibold text-black bg-gray-50
           ${navOpen ? 'translate-x-0' : 'translate-x-full'}
           `}
         >
@@ -123,7 +123,7 @@ const Navigation = () => {
           <div className="flex flex-col space-y-6">
             <Link
               href="#about"
-              className="transition duration-300 group"
+              className="transition-all duration-300 group"
               onClick={() => setNavOpen(false)}
             >
               About
@@ -131,7 +131,7 @@ const Navigation = () => {
             </Link>
             <Link
               href="#services"
-              className="transition duration-300 group"
+              className="transition-all duration-300 group"
               onClick={() => setNavOpen(false)}
             >
               Services
@@ -139,7 +139,7 @@ const Navigation = () => {
             </Link>
             <Link
               href="#portfolio"
-              className="transition duration-300 group"
+              className="transition-all duration-300 group"
               onClick={() => setNavOpen(false)}
             >
               Portfolio
@@ -147,7 +147,7 @@ const Navigation = () => {
             </Link>
             <Link
               href="#contact"
-              className="transition duration-300 group"
+              className="transition-all duration-300 group"
               onClick={() => setNavOpen(false)}
             >
               Contact
@@ -172,7 +172,7 @@ const Navigation = () => {
       <Link
         href="#nav"
         className={`
-        fixed flex z-40 items-center justify-center p-1 text-white rounded-full bottom-5 right-5 bg-theme-secondary transition
+        fixed flex z-40 items-center justify-center p-1 text-white rounded-full bottom-5 right-5 bg-theme-secondary transition-all ease-in-out
         ${scrollPosition >= 5 ? 'opacity-90' : 'opacity-0'}
         ${scrollPosition >= 99 && '-translate-y-16'}
         `}

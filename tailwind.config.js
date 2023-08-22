@@ -24,7 +24,6 @@ module.exports = {
         // theme colors
         'theme-primary': 'hsla(var(--theme-primary))',
         'theme-secondary': 'hsla(var(--theme-secondary))',
-
         // shadcnui
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
