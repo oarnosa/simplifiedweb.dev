@@ -55,7 +55,7 @@ const Carousel = () => {
             {/* End Title */}
 
             {/* Thumbnail Landing */}
-            <div className="flex h-full p-0 max-h-96 md:hidden xl:bg-gray-100 xl:border-2 xl:rounded-md xl:min-h-[384px] xl:flex xl:px-16 xl:py-12">
+            <div className="flex h-full p-0 max-h-96 md:hidden xl:bg-gray-100 xl:border-2 xl:rounded-md min-h-[384px] xl:flex xl:px-16 xl:py-12">
               <img
                 src={project.images.landing}
                 alt={project.title}

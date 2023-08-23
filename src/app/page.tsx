@@ -134,7 +134,7 @@ const Home = () => {
 
           {/* Icons */}
           <div className="mt-16 space-y-8 md:gap-0 md:grid md:grid-cols-3 lg:mt-32 lg:space-y-0">
-            <div className="flex flex-col items-center justify-start space-y-4 text-center md:px-4 lg:px-8">
+            <div className="flex flex-col items-center justify-start space-y-4 text-center md:px-4 lg:px-8 lg:space-y-0">
               <MonitorSmartphone size={64} className="text-theme-secondary" />
               <p className="font-sans font-semibold capitalize">Responsive</p>
               <p>
