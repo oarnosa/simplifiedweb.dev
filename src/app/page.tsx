@@ -170,7 +170,7 @@ const Home = () => {
           {/* Intro */}
           <h2 className="pb-8 font-sans text-2xl font-semibold text-center capitalize md:text-3xl lg:text-4xl">
             <span className="text-theme-secondary">$0</span> Down,{' '}
-            <span className="text-theme-secondary">$150</span> Per Month <br />{' '}
+            <span className="text-theme-secondary">$200</span> Per Month <br />{' '}
             12 Month Minimum Contract
           </h2>
           <p className="max-w-3xl pb-4 mx-auto text-center">
@@ -346,7 +346,7 @@ const Home = () => {
               <p className="pb-2">Starting At</p>
               <h3 className="flex items-end pb-8 text-theme-primary">
                 <span className="font-sans text-4xl font-semibold lg:text-5xl">
-                  $300
+                  $400
                 </span>{' '}
                 / month
               </h3>
@@ -383,7 +383,7 @@ const Home = () => {
               <p className="pb-2">5 Pages</p>
               <h3 className="flex items-end pb-8 text-theme-primary">
                 <span className="font-sans text-4xl font-semibold lg:text-5xl">
-                  $150
+                  $200
                 </span>{' '}
                 / month
               </h3>
@@ -460,7 +460,7 @@ const Home = () => {
               <p className="pb-2">Starting At</p>
               <h3 className="flex items-end pb-8 text-theme-primary">
                 <span className="font-sans text-4xl font-semibold lg:text-5xl">
-                  $5K
+                  $8k
                 </span>
               </h3>
               <ul className="w-full space-y-4 text-start">

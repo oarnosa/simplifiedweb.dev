@@ -13,7 +13,7 @@ const Navigation = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
 
   // get percentage of current scroll location
-  function handleScroll() {
+  const handleScroll = () => {
     const height =
       document.documentElement.scrollHeight -
       document.documentElement.clientHeight;
@@ -23,7 +23,14 @@ const Navigation = () => {
     const scrolled = (windowScroll / height) * 100;
 
     setScrollPosition(scrolled);
-  }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll, { passive: true });
@@ -33,7 +40,7 @@ const Navigation = () => {
   });
 
   return (
-    <nav className="h-[11vh] text-white bg-theme-primary" id="nav">
+    <nav className="h-[11vh] text-white bg-theme-primary">
       {/* Desktop Nav */}
       <div className="container items-center justify-between hidden h-full gap-16 lg:flex">
         {/* Logo */}
@@ -169,16 +176,17 @@ const Navigation = () => {
       {/* End Mobile Nav */}
 
       {/* Back To Top Button */}
-      <Link
-        href="#nav"
+      <button
+        type="button"
         className={`
         fixed flex z-40 items-center justify-center p-1 text-white rounded-full bottom-5 right-5 bg-theme-secondary transition-all ease-in-out
         ${scrollPosition >= 5 ? 'opacity-90' : 'opacity-0'}
         ${scrollPosition >= 99 && '-translate-y-16'}
         `}
+        onClick={() => scrollToTop()}
       >
         <ChevronUp size={24} />
-      </Link>
+      </button>
       {/* End Back To Top Button */}
     </nav>
   );
