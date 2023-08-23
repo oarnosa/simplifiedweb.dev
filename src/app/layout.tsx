@@ -1,8 +1,10 @@
+import { Analytics } from '@vercel/analytics/react';
 import type { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 import SansBeam from 'next/font/local';
 
 import Footer from '@/components/Footer';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
 import Navigation from '@/components/Navigation';
 
 import '@/styles/globals.css';
@@ -44,18 +46,23 @@ const sansBeam = SansBeam({
 
 export const metadata: Metadata = {
   title: 'Small Business Web Development | Simplified Web.Dev',
-  description: 'Web Development Simplified',
+  description:
+    'Empowering Small Businesses with Effortless Web Development Solutions - Your Online Presence, Simplified.',
 };
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en" className="scroll-smooth">
+      {process.env.GA_TRACKING_ID && (
+        <GoogleAnalytics GA_TRACKING_ID={process.env.GA_TRACKING_ID} />
+      )}
       <body
         className={`${montserrat.variable} ${sansBeam.variable} font-serif`}
       >
         <Navigation />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
