@@ -25,7 +25,7 @@ const Home = () => {
   return (
     <main>
       {/* Hero */}
-      <section className="h-[68vh] text-white bg-theme-primary">
+      <section className="h-[70vh] text-white bg-theme-primary">
         <div className="container flex flex-col items-center justify-center h-full text-center">
           {/* Intro Desktop */}
           <div className="flex-col hidden font-sans text-5xl font-semibold md:flex lg:text-6xl">
