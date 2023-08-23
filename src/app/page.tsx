@@ -67,9 +67,8 @@ const Home = () => {
           {/* End Intro Mobile */}
 
           <p className="max-w-xl my-12 text-gray-200">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-            distinctio quos repudiandae, adipisci magnam dolores molestiae
-            dolorum rem fuga a.
+            Empowering Small Businesses with Effortless Web Development
+            Solutions - Your Online Presence, Simplified.
           </p>
           <div className="flex flex-col items-center justify-center gap-4 lg:gap-8 lg:flex-row">
             <Link
@@ -111,53 +110,52 @@ const Home = () => {
             </div>
             <div className="col-span-7">
               <p className="pb-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-                ducimus provident harum deserunt sunt non? Quod, cum dolore
-                maiores, consequuntur dicta modi unde minima dolorum eveniet
-                corporis sapiente, asperiores reprehenderit?
-              </p>
-              <p className="pb-4">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Mollitia vel eos dolorem labore quaerat iure magnam aliquam
-                reprehenderit nulla doloribus.
+                At Simplified Web.Dev, we are on a mission to empower small
+                businesses by making web design and development easy. We
+                understand the unique challenges that small businesses face, and
+                our dedicated team is here to simplify your online journey. Our
+                approach is all about merging cutting-edge tech and design with
+                user-friendly functionality, ensuring that your digital presence
+                not only looks amazing but also drives results.
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-                similique ad possimus perferendis impedit et voluptatibus
-                veritatis aliquid officia animi commodi quibusdam quidem beatae
-                non aspernatur in velit temporibus expedita consequatur,
-                molestias vitae earum. Pariatur asperiores tenetur ipsum tempora
-                fugit?
+                Navigating the world of web design and development can be
+                overwhelming, especially for small businesses with limited
+                resources. That is where we come in. Our experts take the
+                complexity out of the equation, offering streamlined solutions
+                tailored to your specific needs. We believe that a simplified
+                website does not mean sacrificing quality; it means focusing on
+                what truly matters to your business and presenting it in the
+                most effective way possible.
               </p>
             </div>
           </div>
           {/* End What We Do */}
 
           {/* Icons */}
-          <div className="mt-16 space-y-8 md:gap-0 md:grid md:grid-cols-3 lg:mt-32">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center md:px-4 lg:px-8">
-              <Smartphone size={64} className="text-theme-secondary" />
-              <p className="font-sans font-semibold capitalize">Mobile First</p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Explicabo minima, eaque pariatur est eligendi hic.
-              </p>
-            </div>
-            <div className="flex flex-col items-center justify-center space-y-4 text-center md:px-4 lg:px-8">
+          <div className="mt-16 space-y-8 md:gap-0 md:grid md:grid-cols-3 lg:mt-32 lg:space-y-0">
+            <div className="flex flex-col items-center justify-start space-y-4 text-center md:px-4 lg:px-8">
               <MonitorSmartphone size={64} className="text-theme-secondary" />
               <p className="font-sans font-semibold capitalize">Responsive</p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-                ipsam ad maiores eos in unde laboriosam voluptatibus laudantium
-                aliquam dolore.
+                Responsive designs that adapt gracefully, delivering consistent
+                brilliance on every screen size and resolution.
               </p>
             </div>
-            <div className="flex flex-col items-center justify-center space-y-4 text-center md:px-4 lg:px-8">
+            <div className="flex flex-col items-center justify-start space-y-4 text-center md:px-4 lg:px-8">
+              <Smartphone size={64} className="text-theme-secondary" />
+              <p className="font-sans font-semibold capitalize">Mobile First</p>
+              <p>
+                Crafting mobile-first websites that ensure seamless experiences
+                across devices, tailored to your audience.
+              </p>
+            </div>
+            <div className="flex flex-col items-center justify-start space-y-4 text-center md:px-4 lg:px-8">
               <GitPullRequest size={64} className="text-theme-secondary" />
               <p className="font-sans font-semibold capitalize">Optimized</p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
-                repudiandae sed. Reprehenderit rerum veritatis reiciendis.
+                Maximizing website speed and visibility, fueling your digital
+                success in search rankings and user engagement.
               </p>
             </div>
           </div>
@@ -176,10 +174,11 @@ const Home = () => {
             12 Month Minimum Contract
           </h2>
           <p className="max-w-3xl pb-4 mx-auto text-center">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor
-            nostrum veritatis commodi porro illum asperiores quasi aut eveniet
-            consectetur tenetur dolore fuga at itaque provident voluptate,
-            dolorum quisquam culpa ipsa.
+            Get started with a $0 upfront cost for a standard 5-page small
+            business website. For more extensive needs, our custom pricing
+            aligns with the project&apos;s scale, additional pages, and time
+            commitment. You retain full ownership of your domain, content,
+            listings, and profiles. Cancel anytime with no fees or hassle.
           </p>
           {/* End Intro */}
 
@@ -190,7 +189,10 @@ const Home = () => {
               <p className="font-sans font-semibold capitalize">
                 Web Design & Development
               </p>
-              <p>Includes over 40 hours of design, development, and testing.</p>
+              <p>
+                Over 40+ dedicated hours for refined web design and development
+                excellence.
+              </p>
             </div>
             <div className="flex flex-col items-center h-full px-12 py-6 space-y-4 text-center transition-all bg-white border-t-8 rounded-md shadow-md xl:px-16 xl:py-8 border-t-theme-secondary hover:translate-x-2 hover:-translate-y-2">
               <Rocket size={60} className="text-theme-secondary" />
@@ -198,16 +200,16 @@ const Home = () => {
                 Built for speed
               </p>
               <p>
-                We can achieve a perfect 100 on Google Page Speed scores and
-                boost your search ranking.
+                Attain a perfect 100 on Google Page Speed for enhanced SEO and
+                performance.
               </p>
             </div>
             <div className="flex flex-col items-center h-full px-12 py-6 space-y-4 text-center transition-all bg-white border-t-8 rounded-md shadow-md xl:px-16 xl:py-8 border-t-theme-secondary hover:translate-x-2 hover:-translate-y-2">
               <AreaChart size={64} className="text-theme-secondary" />
               <p className="font-sans font-semibold capitalize">Analytics</p>
               <p>
-                We install Google Analytics for free to monitor traffic and
-                where it comes from.
+                Empower your site with insights using seamlessly integrated
+                Google Analytics.
               </p>
             </div>
             <div className="flex flex-col items-center h-full px-12 py-6 space-y-4 text-center transition-all bg-white border-t-8 rounded-md shadow-md xl:px-16 xl:py-8 border-t-theme-secondary hover:translate-x-2 hover:-translate-y-2">
@@ -215,24 +217,23 @@ const Home = () => {
               <p className="font-sans font-semibold capitalize">
                 Hosting Fees Included
               </p>
-              <p>Hosting fees are built right into the monthly payment.</p>
+              <p>Hosting fees covered for a worry-free online presence.</p>
             </div>
             <div className="flex flex-col items-center h-full px-12 py-6 space-y-4 text-center transition-all bg-white border-t-8 rounded-md shadow-md xl:px-16 xl:py-8 border-t-theme-secondary hover:translate-x-2 hover:-translate-y-2">
               <PencilLine size={60} className="text-theme-secondary" />
               <p className="font-sans font-semibold capitalize">
-                Unlimited Edits
+                Endless Revisions
               </p>
               <p>
-                Change anything you want at anytime and it will be done that
-                day.
+                Unlimited edits to ensure your vision is perfectly realized.
               </p>
             </div>
             <div className="flex flex-col items-center h-full px-12 py-6 space-y-4 text-center transition-all bg-white border-t-8 rounded-md shadow-md xl:px-16 xl:py-8 border-t-theme-secondary hover:translate-x-2 hover:-translate-y-2">
               <HelpingHand size={64} className="text-theme-secondary" />
               <p className="font-sans font-semibold capitalize">24/7 Support</p>
               <p>
-                Call direct anytime day or night, no phone trees or automated
-                responses.
+                Round the clock help ensuring you&apos;re never alone on your
+                journey.
               </p>
             </div>
           </div>
@@ -258,10 +259,14 @@ const Home = () => {
                 The Big Business Treatment
               </h2>
               <p className="pt-4 text-gray-200">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti magni harum mollitia, est vitae aliquid asperiores
-                nulla, illo exercitationem nam eaque modi eos, omnis tempore
-                ratione quod in placeat a.
+                Your success fuels our passion. We are not just here to build
+                websites; we are here to build your online success story. Our
+                team works closely with you to understand your goals, audience,
+                and brand identity. From responsive designs that look stunning
+                on any device to user experiences that convert visitors into
+                customers, we are dedicated to bringing your vision to life. We
+                are here to simplify your web design and development experience
+                - because great things come from keeping it simple.
               </p>
             </div>
             <div className="col-span-7">
@@ -345,21 +350,28 @@ const Home = () => {
                 </span>{' '}
                 / month
               </h3>
-              <ul className="w-full space-y-4">
-                <li className="flex justify-start">
-                  <ChevronRight className="text-gray-300" /> List Item
+              <ul className="w-full space-y-4 text-start">
+                <li className="grid grid-cols-12">
+                  <ChevronRight className="col-span-1 text-theme-secondary" />
+                  <b className="col-span-11">
+                    Includes All Features From Standard
+                  </b>
                 </li>
-                <li className="flex justify-start">
-                  <ChevronRight className="text-gray-300" /> List Item
+                <li className="grid grid-cols-12">
+                  <ChevronRight className="col-span-1 text-theme-secondary" />
+                  <span className="col-span-11">Blog Integration</span>
                 </li>
-                <li className="flex justify-start">
-                  <ChevronRight className="text-gray-300" /> List Item
+                <li className="grid grid-cols-12">
+                  <ChevronRight className="col-span-1 text-theme-secondary" />
+                  <span className="col-span-11">
+                    Multi-User Access Management
+                  </span>
                 </li>
-                <li className="flex justify-start">
-                  <ChevronRight className="text-gray-300" /> List Item
-                </li>
-                <li className="flex justify-start">
-                  <ChevronRight className="text-gray-300" /> List Item
+                <li className="grid grid-cols-12">
+                  <ChevronRight className="col-span-1 text-theme-secondary" />
+                  <span className="col-span-11">
+                    Content Management System (CMS)
+                  </span>
                 </li>
               </ul>
             </div>
@@ -375,45 +387,68 @@ const Home = () => {
                 </span>{' '}
                 / month
               </h3>
-              <ul className="w-full space-y-4">
-                <li className="flex justify-start">
-                  <ChevronRight className="text-theme-secondary" /> List Item
+              <ul className="w-full space-y-4 text-start">
+                <li className="grid grid-cols-12">
+                  <ChevronRight className="col-span-1 text-theme-secondary" />
+                  <span className="col-span-11">
+                    Over 40+ Hours of Design, Development and Testing
+                  </span>
                 </li>
-                <li className="flex justify-start">
-                  <ChevronRight className="text-theme-secondary" /> List Item
+                <li className="grid grid-cols-12">
+                  <ChevronRight className="col-span-1 text-theme-secondary" />
+                  <span className="col-span-11">High-Performance</span>
                 </li>
-                <li className="flex justify-start">
-                  <ChevronRight className="text-theme-secondary" /> List Item
+                <li className="grid grid-cols-12">
+                  <ChevronRight className="col-span-1 text-theme-secondary" />
+                  <span className="col-span-11">Custom Website Design</span>
                 </li>
-                <li className="flex justify-start">
-                  <ChevronRight className="text-theme-secondary" /> List Item
+                <li className="grid grid-cols-12">
+                  <ChevronRight className="col-span-1 text-theme-secondary" />
+                  <span className="col-span-11">Unlimited Edits</span>
                 </li>
-                <li className="flex justify-start">
-                  <ChevronRight className="text-theme-secondary" /> List Item
+                <li className="grid grid-cols-12">
+                  <ChevronRight className="col-span-1 text-theme-secondary" />
+                  <span className="col-span-11">Hosting Included</span>
                 </li>
-                <li className="flex justify-start">
-                  <ChevronRight className="text-theme-secondary" /> List Item
+                <li className="grid grid-cols-12">
+                  <ChevronRight className="col-span-1 text-theme-secondary" />
+                  <span className="col-span-11">Domain Configuration</span>
                 </li>
-                <li className="flex justify-start">
-                  <ChevronRight className="text-theme-secondary" /> List Item
+                <li className="grid grid-cols-12">
+                  <ChevronRight className="col-span-1 text-theme-secondary" />
+                  <span className="col-span-11">
+                    Google Analytics Integration
+                  </span>
                 </li>
-                <li className="flex justify-start">
-                  <ChevronRight className="text-theme-secondary" /> List Item
+                <li className="grid grid-cols-12">
+                  <ChevronRight className="col-span-1 text-theme-secondary" />
+                  <span className="col-span-11">
+                    Search Engine Optimization (SEO)
+                  </span>
                 </li>
-                <li className="flex justify-start">
-                  <ChevronRight className="text-theme-secondary" /> List Item
+                <li className="grid grid-cols-12">
+                  <ChevronRight className="col-span-1 text-theme-secondary" />
+                  <span className="col-span-11">
+                    Contact Forms and Lead Generation
+                  </span>
                 </li>
-                <li className="flex justify-start">
-                  <ChevronRight className="text-theme-secondary" /> List Item
+                <li className="grid grid-cols-12">
+                  <ChevronRight className="col-span-1 text-theme-secondary" />
+                  <span className="col-span-11">Social Media Integration</span>
                 </li>
-                <li className="flex justify-start">
-                  <ChevronRight className="text-theme-secondary" /> List Item
+                <li className="grid grid-cols-12">
+                  <ChevronRight className="col-span-1 text-theme-secondary" />
+                  <span className="col-span-11">
+                    Portfolio and Testimonials
+                  </span>
                 </li>
-                <li className="flex justify-start">
-                  <ChevronRight className="text-theme-secondary" /> List Item
+                <li className="grid grid-cols-12">
+                  <ChevronRight className="col-span-1 text-theme-secondary" />
+                  <span className="col-span-11">Round-The-Clock Support</span>
                 </li>
-                <li className="flex justify-start">
-                  <ChevronRight className="text-theme-secondary" /> List Item
+                <li className="grid grid-cols-12">
+                  <ChevronRight className="col-span-1 text-theme-secondary" />
+                  <span className="col-span-11">Lifetime Updates</span>
                 </li>
               </ul>
             </div>
@@ -428,21 +463,32 @@ const Home = () => {
                   $5K
                 </span>
               </h3>
-              <ul className="w-full space-y-4">
-                <li className="flex justify-start">
-                  <ChevronRight className="text-gray-300" /> List Item
+              <ul className="w-full space-y-4 text-start">
+                <li className="grid grid-cols-12">
+                  <ChevronRight className="col-span-1 text-theme-secondary" />
+                  <b className="col-span-11">
+                    Includes All Features From Standard + Blogging
+                  </b>
                 </li>
-                <li className="flex justify-start">
-                  <ChevronRight className="text-gray-300" /> List Item
+                <li className="grid grid-cols-12">
+                  <ChevronRight className="col-span-1 text-theme-secondary" />
+                  <span className="col-span-11">
+                    Shopify or WooCommerce Integration
+                  </span>
                 </li>
-                <li className="flex justify-start">
-                  <ChevronRight className="text-gray-300" /> List Item
+                <li className="grid grid-cols-12">
+                  <ChevronRight className="col-span-1 text-theme-secondary" />
+                  <span className="col-span-11">Easy To Edit</span>
                 </li>
-                <li className="flex justify-start">
-                  <ChevronRight className="text-gray-300" /> List Item
+                <li className="grid grid-cols-12">
+                  <ChevronRight className="col-span-1 text-theme-secondary" />
+                  <span className="col-span-11">
+                    Data Protection and Security
+                  </span>
                 </li>
-                <li className="flex justify-start">
-                  <ChevronRight className="text-gray-300" /> List Item
+                <li className="grid grid-cols-12">
+                  <ChevronRight className="col-span-1 text-theme-secondary" />
+                  <span className="col-span-11">Training and Support</span>
                 </li>
               </ul>
               <div className="w-full pt-8 pb-4 mt-8 border-t-2">
