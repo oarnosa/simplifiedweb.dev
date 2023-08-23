@@ -41,7 +41,7 @@ const Navigation = () => {
           <Image
             src={LogoDark}
             alt="Simplified Web.Dev Logo"
-            className="w-40"
+            className="w-32"
           />
         </Link>
         {/* End Logo */}
@@ -87,7 +87,7 @@ const Navigation = () => {
           <Image
             src={LogoDark}
             alt="Simplified Web.Dev Logo"
-            className="w-32"
+            className="w-28"
           />
         </Link>
         {/* End Logo */}
