@@ -24,7 +24,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="mt-4 mb-8 lg:my-12">
+    <div className="min-h-[575px] flex flex-col justify-center mt-4 mb-8 lg:my-12">
       {/* Carousel Content */}
       {projects
         .filter((_, index) => index === current)
