@@ -33,7 +33,7 @@ const Navigation = () => {
   });
 
   return (
-    <nav className="h-[10vh] text-white bg-theme-primary" id="nav">
+    <nav className="h-[11vh] text-white bg-theme-primary" id="nav">
       {/* Desktop Nav */}
       <div className="container items-center justify-between hidden h-full gap-16 lg:flex">
         {/* Logo */}
