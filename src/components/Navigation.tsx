@@ -184,6 +184,7 @@ const Navigation = () => {
         ${scrollPosition >= 99 && '-translate-y-16'}
         `}
         onClick={() => scrollToTop()}
+        aria-label="Back to Top"
       >
         <ChevronUp size={24} />
       </button>

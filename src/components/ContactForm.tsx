@@ -16,16 +16,23 @@ import {
   FormMessage,
 } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
-
-import { Textarea } from './ui/textarea';
+import { Textarea } from '@/components/ui/textarea';
 
 const formSchema = z.object({
-  firstname: z.string(),
-  lastname: z.string(),
-  phone: z.string(),
-  email: z.string(),
-  company: z.string(),
-  message: z.string(),
+  firstname: z
+    .string({ required_error: 'First name is required' })
+    .min(2, { message: 'Must be 2 or more characters' }),
+  lastname: z
+    .string({ required_error: 'Last name is required' })
+    .min(2, { message: 'Must be 2 or more characters' }),
+  phone: z.string({ required_error: 'Phone number is required' }),
+  email: z
+    .string({ required_error: 'Email is required' })
+    .email({ message: 'Invalid email address' }),
+  company: z.string().optional(),
+  message: z.string({
+    required_error: 'Please include a short message on how we can help you',
+  }),
 });
 
 const ContactForm = () => {
@@ -33,12 +40,12 @@ const ContactForm = () => {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      firstname: '',
-      lastname: '',
-      phone: '',
-      email: '',
-      company: '',
-      message: '',
+      firstname: undefined,
+      lastname: undefined,
+      phone: undefined,
+      email: undefined,
+      company: undefined,
+      message: undefined,
     },
   });
 
@@ -118,7 +125,7 @@ const ContactForm = () => {
           name="company"
           render={({ field }) => (
             <FormItem className="w-full">
-              <FormLabel>Company Name</FormLabel>
+              <FormLabel>Company Name (optional)</FormLabel>
               <FormControl>
                 <Input {...field} className="text-black" />
               </FormControl>

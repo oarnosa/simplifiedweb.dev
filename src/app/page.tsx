@@ -114,9 +114,9 @@ const Home = () => {
                 businesses by making web design and development easy. We
                 understand the unique challenges that small businesses face, and
                 our dedicated team is here to simplify your online journey. Our
-                approach is all about merging cutting-edge tech and design with
-                user-friendly functionality, ensuring that your digital presence
-                not only looks amazing but also drives results.
+                approach is all about merging tech and design with user-friendly
+                functionality, ensuring that your digital presence not only
+                looks amazing but also drives results.
               </p>
               <p>
                 Navigating the world of web design and development can be
@@ -396,11 +396,11 @@ const Home = () => {
                 </li>
                 <li className="grid grid-cols-12">
                   <ChevronRight className="col-span-1 text-theme-secondary" />
-                  <span className="col-span-11">High-Performance</span>
+                  <span className="col-span-11">Custom Website Design</span>
                 </li>
                 <li className="grid grid-cols-12">
                   <ChevronRight className="col-span-1 text-theme-secondary" />
-                  <span className="col-span-11">Custom Website Design</span>
+                  <span className="col-span-11">High-Performance</span>
                 </li>
                 <li className="grid grid-cols-12">
                   <ChevronRight className="col-span-1 text-theme-secondary" />
