@@ -48,6 +48,15 @@ export const metadata: Metadata = {
   title: 'Small Business Web Development | Simplified Web.Dev',
   description:
     'Empowering Small Businesses with Effortless Web Development Solutions - Your Online Presence, Simplified.',
+  icons: { icon: '/favicon.ico' },
+  openGraph: {
+    url: 'simplifiedweb.dev',
+    title: 'Small Business Web Development | Simplified Web.Dev',
+    description:
+      'Empowering Small Businesses with Effortless Web Development Solutions - Your Online Presence, Simplified.',
+    siteName: 'Simplified Web.Dev',
+    images: [{ url: '/images/thumbnail.png' }],
+  },
 };
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
