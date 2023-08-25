@@ -184,7 +184,7 @@ const Home = () => {
 
           {/* Cards */}
           <div className="grid gap-8 mt-16 md:grid-cols-2 lg:grid-cols-3">
-            <div className="flex flex-col items-center h-full px-12 py-6 space-y-4 text-center transition-all bg-white border-t-8 rounded-md shadow-md xl:px-16 xl:py-8 border-t-theme-secondary hover:translate-x-2 hover:-translate-y-2">
+            <div className="flex flex-col items-center h-full px-12 py-6 space-y-4 text-center transition-all bg-white border-t-8 rounded-md shadow-md xl:px-16 xl:py-8 border-t-theme-secondary xl:hover:translate-x-2 xl:hover:-translate-y-2">
               <Code2 size={64} className="text-theme-secondary" />
               <p className="font-sans font-semibold capitalize">
                 Web Design & Development
@@ -194,7 +194,7 @@ const Home = () => {
                 excellence.
               </p>
             </div>
-            <div className="flex flex-col items-center h-full px-12 py-6 space-y-4 text-center transition-all bg-white border-t-8 rounded-md shadow-md xl:px-16 xl:py-8 border-t-theme-secondary hover:translate-x-2 hover:-translate-y-2">
+            <div className="flex flex-col items-center h-full px-12 py-6 space-y-4 text-center transition-all bg-white border-t-8 rounded-md shadow-md xl:px-16 xl:py-8 border-t-theme-secondary xl:hover:translate-x-2 xl:hover:-translate-y-2">
               <Rocket size={60} className="text-theme-secondary" />
               <p className="font-sans font-semibold capitalize">
                 Built for speed
@@ -204,7 +204,7 @@ const Home = () => {
                 performance.
               </p>
             </div>
-            <div className="flex flex-col items-center h-full px-12 py-6 space-y-4 text-center transition-all bg-white border-t-8 rounded-md shadow-md xl:px-16 xl:py-8 border-t-theme-secondary hover:translate-x-2 hover:-translate-y-2">
+            <div className="flex flex-col items-center h-full px-12 py-6 space-y-4 text-center transition-all bg-white border-t-8 rounded-md shadow-md xl:px-16 xl:py-8 border-t-theme-secondary xl:hover:translate-x-2 xl:hover:-translate-y-2">
               <AreaChart size={64} className="text-theme-secondary" />
               <p className="font-sans font-semibold capitalize">Analytics</p>
               <p>
@@ -212,14 +212,14 @@ const Home = () => {
                 Google Analytics.
               </p>
             </div>
-            <div className="flex flex-col items-center h-full px-12 py-6 space-y-4 text-center transition-all bg-white border-t-8 rounded-md shadow-md xl:px-16 xl:py-8 border-t-theme-secondary hover:translate-x-2 hover:-translate-y-2">
+            <div className="flex flex-col items-center h-full px-12 py-6 space-y-4 text-center transition-all bg-white border-t-8 rounded-md shadow-md xl:px-16 xl:py-8 border-t-theme-secondary xl:hover:translate-x-2 xl:hover:-translate-y-2">
               <PiggyBank size={64} className="text-theme-secondary" />
               <p className="font-sans font-semibold capitalize">
                 Hosting Fees Included
               </p>
               <p>Hosting fees covered for a worry-free online presence.</p>
             </div>
-            <div className="flex flex-col items-center h-full px-12 py-6 space-y-4 text-center transition-all bg-white border-t-8 rounded-md shadow-md xl:px-16 xl:py-8 border-t-theme-secondary hover:translate-x-2 hover:-translate-y-2">
+            <div className="flex flex-col items-center h-full px-12 py-6 space-y-4 text-center transition-all bg-white border-t-8 rounded-md shadow-md xl:px-16 xl:py-8 border-t-theme-secondary xl:hover:translate-x-2 xl:hover:-translate-y-2">
               <PencilLine size={60} className="text-theme-secondary" />
               <p className="font-sans font-semibold capitalize">
                 Endless Revisions
@@ -228,7 +228,7 @@ const Home = () => {
                 Unlimited edits to ensure your vision is perfectly realized.
               </p>
             </div>
-            <div className="flex flex-col items-center h-full px-12 py-6 space-y-4 text-center transition-all bg-white border-t-8 rounded-md shadow-md xl:px-16 xl:py-8 border-t-theme-secondary hover:translate-x-2 hover:-translate-y-2">
+            <div className="flex flex-col items-center h-full px-12 py-6 space-y-4 text-center transition-all bg-white border-t-8 rounded-md shadow-md xl:px-16 xl:py-8 border-t-theme-secondary xl:hover:translate-x-2 xl:hover:-translate-y-2">
               <HelpingHand size={64} className="text-theme-secondary" />
               <p className="font-sans font-semibold capitalize">24/7 Support</p>
               <p>
@@ -339,7 +339,7 @@ const Home = () => {
         <div className="container">
           <div className="flex flex-col lg:grid lg:grid-cols-3 lg:gap-6">
             {/* Blogging */}
-            <div className="flex flex-col items-center self-center w-full max-w-md px-4 pt-8 pb-12 mb-8 text-center transition-all bg-white border-2 border-t-8 rounded-md shadow-md hover:-translate-y-2 md:px-8 lg:self-start xl:px-16 lg:-mt-16 h-fit">
+            <div className="flex flex-col items-center self-center w-full max-w-md px-4 pt-8 pb-12 mb-8 text-center transition-all bg-white border-2 border-t-8 rounded-md shadow-md xl:hover:-translate-y-2 md:px-8 lg:self-start xl:px-16 lg:-mt-16 h-fit">
               <p className="pb-4 font-sans text-xl font-semibold">
                 Standard + Blogging
               </p>
@@ -378,7 +378,7 @@ const Home = () => {
             {/* End Blogging */}
 
             {/* Standard */}
-            <div className="flex flex-col items-center self-center order-first w-full max-w-md px-4 pt-8 pb-12 mb-8 -mt-24 text-center transition-all bg-white border-2 border-t-8 rounded-md shadow-md hover:-translate-y-2 md:px-8 lg:self-start xl:px-16 lg:order-none lg:-mt-36 border-theme-secondary h-fit">
+            <div className="flex flex-col items-center self-center order-first w-full max-w-md px-4 pt-8 pb-12 mb-8 -mt-24 text-center transition-all bg-white border-2 border-t-8 rounded-md shadow-md xl:hover:-translate-y-2 md:px-8 lg:self-start xl:px-16 lg:order-none lg:-mt-36 border-theme-secondary h-fit">
               <p className="pb-4 font-sans text-xl font-semibold">Standard</p>
               <p className="pb-2">5 Pages</p>
               <h3 className="flex items-end pb-8 text-theme-primary">
@@ -455,12 +455,12 @@ const Home = () => {
             {/* End Standard */}
 
             {/* Ecommerce */}
-            <div className="flex flex-col items-center self-center w-full max-w-md px-4 pt-8 pb-12 mb-8 text-center transition-all bg-white border-2 border-t-8 rounded-md shadow-md hover:-translate-y-2 md:px-8 lg:self-start xl:px-16 lg:-mt-16 h-fit">
+            <div className="flex flex-col items-center self-center w-full max-w-md px-4 pt-8 pb-12 mb-8 text-center transition-all bg-white border-2 border-t-8 rounded-md shadow-md xl:hover:-translate-y-2 md:px-8 lg:self-start xl:px-16 lg:-mt-16 h-fit">
               <p className="pb-4 font-sans text-xl font-semibold">E-Commerce</p>
               <p className="pb-2">Starting At</p>
               <h3 className="flex items-end pb-8 text-theme-primary">
                 <span className="font-sans text-4xl font-semibold lg:text-5xl">
-                  $8k
+                  $8K
                 </span>
               </h3>
               <ul className="w-full space-y-4 text-start">

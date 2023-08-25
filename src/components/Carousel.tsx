@@ -60,6 +60,7 @@ const Carousel = () => {
                 src={project.images.landing}
                 alt={project.title}
                 className="object-cover object-top w-full rounded-xl"
+                loading="lazy"
               />
             </div>
             {/* Thumbnail Landing */}
@@ -70,11 +71,13 @@ const Carousel = () => {
                 src={project.images.top}
                 alt={project.title}
                 className="absolute z-10 w-80 lg:w-96 xl:w-80 left-16 lg:left-32 xl:left-16 top-12 rounded-t-xl"
+                loading="lazy"
               />
               <img
                 src={project.images.scroll}
                 alt={project.title}
                 className="absolute top-0 w-80 lg:w-96 xl:w-80 right-16 lg:right-32 xl:right-16"
+                loading="lazy"
               />
             </div>
             {/* End Thumbnail Top / Content Scroll */}
@@ -85,6 +88,7 @@ const Carousel = () => {
                 src={project.images.section}
                 alt={project.title}
                 className="object-cover object-bottom w-full rounded-t-none rounded-xl"
+                loading="lazy"
               />
             </div>
             {/* End Thumbnail Section */}
