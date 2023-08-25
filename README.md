@@ -1,9 +1,9 @@
 <div align="center">
-  <img alt="Logo" src="./src/assets/swd-logo-light.svg" width="200px" />
+  <img alt="Logo" src="./src/assets/swd-logo-light.png" width="200px" />
 </div>
 
 <h4 align="center">
- Website for <a href="https://simplifiedweb.dev" target="_blank">Simplified Web.Dev</a>, a web development agency focused on building custom websites for small businesses on an affordable plan. Built with <a href="https://www.nextjs.org/" target="_blank">Next.js</a> and <a href="https://www.tailwindcss.com/" target="_blank">Tailwind CSS</a>, hosted on <a href="https://vercel.com/" target="_blank">Vercel</a>
+ Website for <a href="https://simplifiedweb.dev" target="_blank">Simplified Web.Dev</a>, a web development agency focused on building custom websites for small businesses on an affordable plan. Built with <a href="https://www.nextjs.org/" target="_blank">Next.js</a> and <a href="https://www.tailwindcss.com/" target="_blank">Tailwind CSS</a>, hosted on <a href="https://vercel.com/" target="_blank">Vercel.</a>
 </h4>
 
 <p align="center">
