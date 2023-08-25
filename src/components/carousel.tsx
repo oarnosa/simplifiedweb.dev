@@ -8,20 +8,17 @@ import Link from 'next/link';
 import PROJECTS_DATA from '@/assets/projects.data';
 
 const Carousel = () => {
-  const [current, setCurrent] = useState(0);
   const [projects] = useState(PROJECTS_DATA);
+  const [current, setCurrent] = useState(0);
 
-  const handleNext = () => {
-    let next = current + 1;
-    if (next <= projects.length - 1) {
-      setCurrent(next);
-    }
-  };
-
-  const handlePrev = () => {
-    let prev = current - 1;
-    if (prev >= 0) setCurrent(prev);
-  };
+  const prev = () =>
+    setCurrent((current) =>
+      current === 0 ? projects.length - 1 : current - 1
+    );
+  const next = () =>
+    setCurrent((current) =>
+      current === projects.length - 1 ? 0 : current + 1
+    );
 
   return (
     <div className="min-h-[575px] flex flex-col justify-center mt-4 mb-8 lg:my-12">
@@ -31,7 +28,7 @@ const Carousel = () => {
         .map((project) => (
           <div
             key={project.id}
-            className="items-center justify-center mb-8 transition-transform duration-500 ease-out lg:mb-12 xl:grid xl:grid-cols-2 xl:grid-rows-2 xl:gap-8"
+            className="items-center justify-center mb-8 lg:mb-12 xl:grid xl:grid-cols-2 xl:grid-rows-2 xl:gap-8"
           >
             {/* Title */}
             <div className="flex flex-col max-w-xl mb-12 space-y-4 xl:mb-0">
@@ -105,7 +102,7 @@ const Carousel = () => {
           cursor-pointer transition-all ease-in-out
           ${current === 0 ? 'text-gray-200' : 'text-black'}
           `}
-          onClick={handlePrev}
+          onClick={prev}
         />
         {projects.map((project) => (
           <div
@@ -130,7 +127,7 @@ const Carousel = () => {
           cursor-pointer transition-all ease-in-out
           ${current === projects.length - 1 ? 'text-gray-200' : 'text-black'}
           `}
-          onClick={handleNext}
+          onClick={next}
         />
       </div>
       {/* End Carousel Nav */}
