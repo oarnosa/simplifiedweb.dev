@@ -3,9 +3,9 @@ import type { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 import SansBeam from 'next/font/local';
 
-import Footer from '@/components/Footer';
-import GoogleAnalytics from '@/components/GoogleAnalytics';
-import Navigation from '@/components/Navigation';
+import Footer from '@/components/footer';
+import GoogleAnalytics from '@/components/google-analytics';
+import Navigation from '@/components/nav';
 
 import '@/styles/globals.css';
 

@@ -43,7 +43,6 @@ const Navigation = () => {
     <nav className="h-[10vh] min-h-[100px] text-white bg-theme-primary">
       {/* Desktop Nav */}
       <div className="container items-center justify-between hidden h-full gap-16 lg:flex">
-        {/* Logo */}
         <Link href="#">
           <Image
             src={LogoDark}
@@ -51,9 +50,6 @@ const Navigation = () => {
             className="w-32"
           />
         </Link>
-        {/* End Logo */}
-
-        {/* Menu */}
         <div className="flex gap-12 font-semibold">
           <Link href="#about" className="transition-all duration-300 group">
             About
@@ -72,24 +68,20 @@ const Navigation = () => {
             <span className="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-theme-secondary"></span>
           </Link>
         </div>
-        {/* End Menu */}
-
-        {/* CTA */}
         <Link
           href="#contact"
-          className={`${buttonVariants({
-            variant: 'default',
-          })} font-semibold text-white bg-theme-secondary hover:bg-theme-secondary/90 active:bg-theme-secondary/80`}
+          className={`
+          font-semibold text-white bg-theme-secondary hover:bg-theme-secondary/90 active:bg-theme-secondary/80
+          ${buttonVariants({ variant: 'default' })}
+          `}
         >
           Start Your Project
         </Link>
-        {/* End CTA */}
       </div>
       {/* End Desktop Nav */}
 
       {/* Mobile Nav */}
       <div className="container flex items-center justify-between h-full gap-16 lg:hidden ">
-        {/* Logo */}
         <Link href="#">
           <Image
             src={LogoDark}
@@ -97,15 +89,11 @@ const Navigation = () => {
             className="w-28"
           />
         </Link>
-        {/* End Logo */}
-
-        {/* Hamburger Icon */}
         <Menu
           size={32}
           className="transition-all cursor-pointer hover:opacity-90"
           onClick={() => setNavOpen(true)}
         />
-        {/* End Hamburger Icon */}
 
         {/* Overlay */}
         <div

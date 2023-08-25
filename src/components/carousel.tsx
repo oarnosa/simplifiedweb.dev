@@ -31,7 +31,7 @@ const Carousel = () => {
         .map((project) => (
           <div
             key={project.id}
-            className="items-center justify-center mb-8 lg:mb-12 xl:grid xl:grid-cols-2 xl:grid-rows-2 xl:gap-8"
+            className="items-center justify-center mb-8 transition-transform duration-500 ease-out lg:mb-12 xl:grid xl:grid-cols-2 xl:grid-rows-2 xl:gap-8"
           >
             {/* Title */}
             <div className="flex flex-col max-w-xl mb-12 space-y-4 xl:mb-0">
