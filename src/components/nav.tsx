@@ -40,14 +40,14 @@ const Navigation = () => {
   });
 
   return (
-    <nav className="h-[10vh] min-h-[100px] text-white bg-theme-primary">
+    <header className="h-[10vh] min-h-[100px] text-white bg-theme-primary">
       {/* Desktop Nav */}
-      <div className="container items-center justify-between hidden h-full gap-16 lg:flex">
+      <nav className="container items-center justify-between hidden h-full gap-16 lg:flex">
         <Link href="#">
           <Image
             src={LogoDark}
             alt="Simplified Web.Dev Logo"
-            className="w-32"
+            className="w-36"
           />
         </Link>
         <div className="flex gap-12 font-semibold">
@@ -77,11 +77,11 @@ const Navigation = () => {
         >
           Start Your Project
         </Link>
-      </div>
+      </nav>
       {/* End Desktop Nav */}
 
       {/* Mobile Nav */}
-      <div className="container flex items-center justify-between h-full gap-16 lg:hidden ">
+      <nav className="container flex items-center justify-between h-full gap-16 lg:hidden ">
         <Link href="#">
           <Image
             src={LogoDark}
@@ -160,7 +160,7 @@ const Navigation = () => {
             Start Your Project
           </Link>
         </aside>
-      </div>
+      </nav>
       {/* End Mobile Nav */}
 
       {/* Back To Top Button */}
@@ -177,7 +177,7 @@ const Navigation = () => {
         <ChevronUp size={24} />
       </button>
       {/* End Back To Top Button */}
-    </nav>
+    </header>
   );
 };
 
