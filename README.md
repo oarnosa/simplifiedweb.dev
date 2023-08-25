@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Logo" src="./src/assets/swd-logo-light.png" width="325px" style="margin:25px 0;"/>
+  <img alt="Logo" src="./src/assets/swd-logo-light.png" width="325px" style="margin-top:35px;margin-bottom:25px;"/>
 </div>
 
 <h4 align="center">
@@ -37,7 +37,7 @@ Emails are sent using nodemailer and setup with a Gmail account. Two environment
 ```bash
 # .env
 EMAIL={YOUR_GMAIL_ACCOUNT}
-EMAIL_PASS={YOUR_GMAIL_APP_PASSWORD} # Must be an App Password gernerate through the Google Security section.
+EMAIL_PASS={YOUR_GMAIL_APP_PASSWORD} # Must be a generated App Password
 ```
 
 For Google Analytics to work, the G-Tag must also be defined in environment variables:
@@ -49,7 +49,7 @@ GA_TRACKING_ID={YOUR_G_TRACKING_ID}
 
 ## Color Reference
 
-<table style="width:100%">
+<table style="width:100%;">
   <tr>
     <th>Color</th>
     <th>HEX</th>
