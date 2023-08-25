@@ -53,10 +53,9 @@ const Hero = () => (
       <div className="flex flex-col items-center justify-center gap-4 lg:gap-8 lg:flex-row">
         <Link
           href="#contact"
-          className={`
-          font-semibold text-white bg-theme-secondary hover:bg-theme-secondary/90 active:bg-theme-secondary/80
-          ${buttonVariants({ variant: 'default' })}
-          `}
+          className={`font-semibold text-white bg-theme-secondary hover:bg-theme-secondary/90 active:bg-theme-secondary/80 ${buttonVariants(
+            { variant: 'default' }
+          )}`}
         >
           Start Your Project
         </Link>

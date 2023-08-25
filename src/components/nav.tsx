@@ -70,10 +70,9 @@ const Navigation = () => {
         </div>
         <Link
           href="#contact"
-          className={`
-          font-semibold text-white bg-theme-secondary hover:bg-theme-secondary/90 active:bg-theme-secondary/80
-          ${buttonVariants({ variant: 'default' })}
-          `}
+          className={`font-semibold text-white bg-theme-secondary hover:bg-theme-secondary/90 active:bg-theme-secondary/80 ${buttonVariants(
+            { variant: 'default' }
+          )}`}
         >
           Start Your Project
         </Link>
@@ -97,19 +96,17 @@ const Navigation = () => {
 
         {/* Overlay */}
         <div
-          className={`
-          fixed top-0 left-0 w-screen h-screen bg-black/40 transition-all z-40 ease-in-out
-          ${!navOpen && 'hidden'}
-          `}
+          className={`fixed top-0 left-0 w-screen h-screen bg-black/40 transition-all z-40 ease-in-out ${
+            !navOpen && 'hidden'
+          }`}
           onClick={() => setNavOpen(false)}
         ></div>
         {/* End Overlay */}
 
         <aside
-          className={`
-          fixed top-0 right-0 z-50 transition-all flex flex-col w-screen h-screen md:w-3/5 p-8 font-semibold text-black bg-gray-50
-          ${navOpen ? 'translate-x-0' : 'translate-x-full'}
-          `}
+          className={`fixed top-0 right-0 z-50 transition-all flex flex-col w-screen h-screen md:w-3/5 p-8 font-semibold text-black bg-gray-50 ${
+            navOpen ? 'translate-x-0' : 'translate-x-full'
+          }`}
         >
           <X
             className="mb-2 ml-auto cursor-pointer"
@@ -151,10 +148,9 @@ const Navigation = () => {
           </div>
           <Link
             href="#contact"
-            className={`
-            font-semibold text-white bg-theme-secondary hover:bg-theme-secondary/90 active:bg-theme-secondary/80 mt-12
-            ${buttonVariants({ variant: 'default' })}
-            `}
+            className={`font-semibold text-white bg-theme-secondary hover:bg-theme-secondary/90 active:bg-theme-secondary/80 mt-12 ${buttonVariants(
+              { variant: 'default' }
+            )}`}
             onClick={() => setNavOpen(false)}
           >
             Start Your Project
@@ -166,11 +162,9 @@ const Navigation = () => {
       {/* Back To Top Button */}
       <button
         type="button"
-        className={`
-        fixed flex z-40 items-center justify-center p-1 text-white rounded-full bottom-5 right-5 bg-theme-secondary transition-all ease-in-out
-        ${scrollPosition >= 5 ? 'opacity-90' : 'opacity-0'}
-        ${scrollPosition >= 99 && '-translate-y-16'}
-        `}
+        className={`fixed flex z-40 items-center justify-center p-1 text-white rounded-full bottom-5 right-5 bg-theme-secondary transition-all ease-in-out ${
+          scrollPosition >= 5 ? 'opacity-90' : 'opacity-0'
+        } ${scrollPosition >= 99 && '-translate-y-16'}`}
         onClick={() => scrollToTop()}
         aria-label="Back to Top"
       >

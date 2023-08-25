@@ -98,23 +98,19 @@ const Carousel = () => {
         <ChevronLeft
           size={28}
           strokeWidth={3}
-          className={`
-          cursor-pointer transition-all ease-in-out
-          ${current === 0 ? 'text-gray-200' : 'text-black'}
-          `}
+          className={`cursor-pointer transition-all ease-in-out ${
+            current === 0 ? 'text-gray-200' : 'text-black'
+          }`}
           onClick={prev}
         />
         {projects.map((project) => (
           <div
             key={project.id}
-            className={`
-            w-5 h-[5px] cursor-pointer rounded-xl transition-all ease-in-out
-            ${
+            className={`w-5 h-[5px] cursor-pointer rounded-xl transition-all ease-in-out ${
               current === projects.indexOf(project)
                 ? 'bg-theme-secondary'
                 : 'bg-black'
-            }
-            `}
+            }`}
             onClick={() => {
               setCurrent(projects.indexOf(project));
             }}
@@ -123,10 +119,9 @@ const Carousel = () => {
         <ChevronRight
           size={28}
           strokeWidth={3}
-          className={`
-          cursor-pointer transition-all ease-in-out
-          ${current === projects.length - 1 ? 'text-gray-200' : 'text-black'}
-          `}
+          className={`cursor-pointer transition-all ease-in-out ${
+            current === projects.length - 1 ? 'text-gray-200' : 'text-black'
+          }`}
           onClick={next}
         />
       </div>
