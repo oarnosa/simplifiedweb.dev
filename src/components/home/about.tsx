@@ -1,7 +1,7 @@
 import { MonitorSmartphone, Smartphone, GitPullRequest } from 'lucide-react';
 
 const About = () => (
-  <section id="about" className="py-24 lg:py-36">
+  <section id="about" className="py-24 lg:pt-24 lg:pb-36">
     <div className="container flex flex-col">
       <div className="space-y-8 lg:gap-8 lg:grid lg:grid-cols-12">
         <div className="flex flex-col justify-around space-y-4 lg:col-span-5">

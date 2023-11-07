@@ -5,7 +5,7 @@ import TypedAnimation from '@/components/typed-animation';
 import { buttonVariants } from '@/components/ui/button';
 
 const Hero = () => (
-  <section className="h-[75vh] min-h-[600px] text-white bg-theme-primary">
+  <section className="py-48 text-white bg-theme-primary">
     <div className="container flex flex-col items-center justify-center h-full text-center">
       {/* Desktop */}
       <div className="flex-col hidden font-sans text-5xl font-semibold md:flex lg:text-6xl">
