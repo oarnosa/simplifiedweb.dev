@@ -36,7 +36,7 @@ const Contact = () => (
               href="mailto:info@simplifiedweb.dev"
               className="transition-all duration-300 group"
             >
-              <span>simplifiedweb.info@gmail.com</span>
+              <span>info@simplifiedweb.dev</span>
               <span className="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-theme-secondary"></span>
             </Link>
           </div>
