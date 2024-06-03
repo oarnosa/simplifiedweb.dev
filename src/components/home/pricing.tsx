@@ -46,7 +46,7 @@ const Pricing = () => (
           <p className="pb-2">5 Pages</p>
           <h3 className="flex items-end pb-8 text-theme-primary">
             <span className="font-sans text-4xl font-semibold lg:text-5xl">
-              $200
+              $150
             </span>{' '}
             / month
           </h3>
