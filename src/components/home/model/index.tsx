@@ -15,7 +15,7 @@ const Model = () => (
       {/* Intro */}
       <h2 className="pb-8 font-sans text-2xl font-semibold text-center capitalize md:text-3xl lg:text-4xl">
         <span className="text-theme-secondary">$0</span> Down,{' '}
-        <span className="text-theme-secondary">$200</span> Per Month <br /> 12
+        <span className="text-theme-secondary">$150</span> Per Month <br /> 6
         Month Minimum Contract
       </h2>
       <p className="max-w-3xl pb-4 mx-auto text-center">

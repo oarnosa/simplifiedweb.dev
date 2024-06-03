@@ -13,7 +13,7 @@ const Pricing = () => (
           <p className="pb-2">Starting At</p>
           <h3 className="flex items-end pb-8 text-theme-primary">
             <span className="font-sans text-4xl font-semibold lg:text-5xl">
-              $400
+              $300
             </span>{' '}
             / month
           </h3>
@@ -119,7 +119,7 @@ const Pricing = () => (
           <p className="pb-2">Starting At</p>
           <h3 className="flex items-end pb-8 text-theme-primary">
             <span className="font-sans text-4xl font-semibold lg:text-5xl">
-              $8K
+              $5K
             </span>
           </h3>
           <ul className="w-full space-y-4 text-start">
